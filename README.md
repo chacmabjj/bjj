@@ -4,30 +4,22 @@ Single-page static website for deployment to the root of the `chacmabjj/bjj` Git
 
 ## Current bundle
 
-Version: `v1.3`
+Version: `v1.4`
 
-## Included changes
+## v1.4 corrections
 
-- updated hero section using the approved coaching-with-kids image
-- working CHACMA BJJ logo incorporated into the live site
-- baboon brand panel incorporated as a visual rail
-- tighter font system and refined typography
-- red-accent palette retained
-- training cards updated with supplied corpus imagery
-- stronger emphasis on flexibility, discretion and mobile coaching
-- WhatsApp CTA linked to `+27 76 885 8313`
-- Google tag `G-R0LVV5Y407` included once in the `<head>`
+- dark horizontal CHACMA BJJ logo cropped from the approved dark logo system
+- logo scale reduced in header/footer
+- white-background logo removed from live interface
+- hero rebuilt as a blended full-width photographic composition instead of a hard rectangular image block
+- dark/crimson gradient overlays added to the hero
+- baboon brand panel removed from hero and relocated to the lower About section
+- desktop type scale reduced throughout
+- training grid returned to six compact cards on wide desktop
+- section proportions tightened to track the approved mock-up more closely
+- WhatsApp CTA remains linked to `+27 76 885 8313`
+- Google tag `G-R0LVV5Y407` remains included exactly once in the `<head>`
 
 ## Deployment
 
 Upload all files and folders in this bundle to the root of the `main` branch.
-
-GitHub Pages should serve the site directly from the repository root.
-
-## Main files
-
-- `index.html`
-- `styles.css`
-- `script.js`
-- `assets/`
-
