@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+  <title id="title">Cape Town and Winelands service area</title>
+  <desc id="desc">Stylised map showing Cape Town, Stellenbosch, Somerset West, Franschhoek and Val de Vie.</desc>
+  <rect width="900" height="360" fill="#0b1412"/>
+  <g opacity=".13" fill="none" stroke="#d8d0c1" stroke-width="1">
+    <path d="M-80 250 C90 185,170 290,320 235 S560 170,980 230"/>
+    <path d="M-40 220 C110 165,210 255,350 210 S630 140,950 195"/>
+    <path d="M-20 285 C180 220,260 320,430 250 S700 205,960 260"/>
+    <path d="M90 65 C180 125,270 85,360 145 S520 120,610 70"/>
+    <path d="M240 25 C330 95,440 45,530 115 S710 105,810 35"/>
+    <path d="M415 335 C500 280,580 330,670 285 S820 245,940 300"/>
+  </g>
+  <g opacity=".18" fill="none" stroke="#9aada4" stroke-width="1.3">
+    <path d="M70 350 C90 315,120 294,126 260 C130 230,112 205,129 178 C149 145,185 137,213 116 C246 92,261 61,292 34"/>
+    <path d="M128 350 C161 316,196 306,223 281 C253 253,270 216,298 199 C347 170,405 173,454 149 C505 123,532 85,584 65"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" font-size="19" fill="#e8e1d5">
+    <g transform="translate(205 250)"><circle r="7" fill="#b61e33"/><circle r="3" fill="#f6f1e8"/><text x="15" y="6">Cape Town</text></g>
+    <g transform="translate(455 190)"><circle r="7" fill="#b61e33"/><circle r="3" fill="#f6f1e8"/><text x="15" y="6">Stellenbosch</text></g>
+    <g transform="translate(490 265)"><circle r="7" fill="#b61e33"/><circle r="3" fill="#f6f1e8"/><text x="15" y="6">Somerset West</text></g>
+    <g transform="translate(665 165)"><circle r="7" fill="#b61e33"/><circle r="3" fill="#f6f1e8"/><text x="15" y="6">Franschhoek</text></g>
+    <g transform="translate(620 92)"><circle r="7" fill="#b61e33"/><circle r="3" fill="#f6f1e8"/><text x="15" y="6">Val de Vie</text></g>
+  </g>
+  <text x="55" y="62" font-family="Inter, Arial, sans-serif" font-size="13" fill="#8d9a94" letter-spacing="4">CAPE TOWN + WINELANDS</text>
+  <line x1="55" y1="79" x2="118" y2="79" stroke="#b61e33" stroke-width="3"/>
+</svg>
