@@ -1,35 +1,33 @@
-# CHACMA BJJ website
+# CHACMA BJJ website bundle
 
-Static GitHub Pages build for `chacmabjj/bjj`.
+Single-page static website for deployment to the root of the `chacmabjj/bjj` GitHub repository.
 
-## Current structural revision
+## Current bundle
 
-This revision specifically corrects the live page against the approved visual mock-up:
+Version: `v1.3`
 
-- much wider fluid desktop canvas (`max-width: 1760px`) instead of the previous narrow 1200px shell
-- desktop hero restored to a wide left-copy / right-image composition
-- hero type scaled down so the main proposition stays compact instead of breaking into many lines
-- compact six-item credential strip
-- `Why private?` restored to a landscape block plus four benefits in one horizontal row on desktop
-- six compact training cards in one row on desktop
-- three-column `Meet Saul` band retained at normal desktop widths
-- compact horizontal locations band
-- homepage testimonial compressed to a short featured quote with the full approved testimonial available via disclosure
-- compact WhatsApp CTA/footer
-- responsive breakpoints moved lower so ordinary desktop/tablet widths do not prematurely collapse into a narrow/mobile layout
-- red/crimson accents retained throughout
+## Included changes
 
-## Production values already configured
-
-- WhatsApp: `+27 76 885 8313`
-- Google tag: `G-R0LVV5Y407`
-- Google tag appears exactly once, immediately after `<head>`
-- relative asset paths are GitHub Pages-safe when deployed from repository root
-
-## Image status
-
-Hero/about imagery is intentionally temporary while the final Saul image set is being prepared. The structural layout is the priority in this revision.
+- updated hero section using the approved coaching-with-kids image
+- working CHACMA BJJ logo incorporated into the live site
+- baboon brand panel incorporated as a visual rail
+- tighter font system and refined typography
+- red-accent palette retained
+- training cards updated with supplied corpus imagery
+- stronger emphasis on flexibility, discretion and mobile coaching
+- WhatsApp CTA linked to `+27 76 885 8313`
+- Google tag `G-R0LVV5Y407` included once in the `<head>`
 
 ## Deployment
 
-Upload the contents of this folder to the root of the `main` branch. GitHub Pages should be configured to deploy from `main` / root.
+Upload all files and folders in this bundle to the root of the `main` branch.
+
+GitHub Pages should serve the site directly from the repository root.
+
+## Main files
+
+- `index.html`
+- `styles.css`
+- `script.js`
+- `assets/`
+
