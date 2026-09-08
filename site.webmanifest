@@ -1,0 +1,9 @@
+{
+  "name": "CHACMA Private Jiu-Jitsu",
+  "short_name": "CHACMA",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b1110",
+  "theme_color": "#0b1110",
+  "icons": []
+}
