@@ -3,7 +3,7 @@
   "short_name": "CHACMA",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#0b1110",
-  "theme_color": "#0b1110",
-  "icons": []
+  "background_color": "#07100f",
+  "theme_color": "#07100f",
+  "icons": [{"src":"assets/icons/favicon.png","sizes":"any","type":"image/png"}]
 }
