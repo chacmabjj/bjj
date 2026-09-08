@@ -6,6 +6,14 @@
   const menuButton = document.querySelector('[data-menu-toggle]');
   const nav = document.querySelector('[data-nav]');
 
+  // Ensure the session-request page is available from the primary navigation.
+  if (nav && !nav.querySelector('a[href="request-session.html"]')) {
+    const requestLink = document.createElement('a');
+    requestLink.href = 'request-session.html';
+    requestLink.textContent = 'Request a session';
+    nav.appendChild(requestLink);
+  }
+
   const updateHeader = () => {
     if (header) header.classList.toggle('is-scrolled', window.scrollY > 16);
   };

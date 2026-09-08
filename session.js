@@ -1,0 +1,97 @@
+(() => {
+  const EMAIL = 'chacmabjj@gmail.com';
+  const WHATSAPP_NUMBER = '27768858313';
+  const form = document.querySelector('#session-request-form');
+  const whatsappButton = document.querySelector('[data-session-whatsapp]');
+  const errorBox = document.querySelector('[data-form-error]');
+  const dateInputs = document.querySelectorAll('[data-preferred-date], [data-alternative-date]');
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const minDate = [
+    today.getFullYear(),
+    String(today.getMonth() + 1).padStart(2, '0'),
+    String(today.getDate()).padStart(2, '0')
+  ].join('-');
+  dateInputs.forEach((input) => { input.min = minDate; });
+
+  const get = (data, key) => String(data.get(key) || '').trim();
+  const display = (value) => value || 'Not specified';
+
+  const friendlyDate = (value) => {
+    if (!value) return '';
+    const [year, month, day] = value.split('-').map(Number);
+    const date = new Date(year, month - 1, day);
+    return new Intl.DateTimeFormat('en-ZA', {
+      weekday: 'short', day: 'numeric', month: 'short', year: 'numeric'
+    }).format(date);
+  };
+
+  const buildRequest = () => {
+    const data = new FormData(form);
+    const name = get(data, 'name');
+    const preferredDate = get(data, 'preferred_date');
+    const preferredTime = get(data, 'preferred_time');
+    const alternativeDate = get(data, 'alternative_date');
+    const alternativeTime = get(data, 'alternative_time');
+
+    const subjectDate = preferredDate ? friendlyDate(preferredDate) : 'date to discuss';
+    const subject = `Chacma BJJ session request — ${name || 'new client'} — ${subjectDate}`;
+
+    const lines = [
+      'CHACMA BJJ — SESSION REQUEST',
+      '',
+      `Name: ${display(name)}`,
+      `Email: ${display(get(data, 'email'))}`,
+      `Mobile / WhatsApp: ${display(get(data, 'phone'))}`,
+      `Preferred contact: ${display(get(data, 'contact_method'))}`,
+      '',
+      `Session format: ${display(get(data, 'session_format'))}`,
+      `Experience level: ${display(get(data, 'experience'))}`,
+      `Training focus: ${display(get(data, 'focus'))}`,
+      `Gi / no-gi: ${display(get(data, 'gi_preference'))}`,
+      '',
+      `Preferred date: ${display(friendlyDate(preferredDate))}`,
+      `Preferred time: ${display(preferredTime)}`,
+      `Alternative date: ${display(friendlyDate(alternativeDate))}`,
+      `Alternative time: ${display(alternativeTime)}`,
+      `Area / suburb: ${display(get(data, 'location'))}`,
+      `Venue preference: ${display(get(data, 'venue_preference'))}`,
+      '',
+      'Goals / questions / practical notes:',
+      get(data, 'notes') || 'None provided.',
+      '',
+      'I understand that this is a session request and that the booking is only confirmed once Saul agrees the date, time and arrangements with me.'
+    ];
+
+    return { subject, body: lines.join('\n') };
+  };
+
+  const validate = () => {
+    if (!form.reportValidity()) {
+      if (errorBox) {
+        errorBox.textContent = 'Please complete the required fields before creating the request.';
+        errorBox.hidden = false;
+      }
+      return false;
+    }
+    if (errorBox) errorBox.hidden = true;
+    return true;
+  };
+
+  form?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!validate()) return;
+    const request = buildRequest();
+    const mailto = `mailto:${EMAIL}?subject=${encodeURIComponent(request.subject)}&body=${encodeURIComponent(request.body)}`;
+    window.location.href = mailto;
+  });
+
+  whatsappButton?.addEventListener('click', () => {
+    if (!validate()) return;
+    const request = buildRequest();
+    const message = `${request.subject}\n\n${request.body}`;
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+  });
+})();
