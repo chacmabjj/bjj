@@ -237,3 +237,26 @@ h1,h2,h3{margin:0;font-family:var(--display);font-weight:700;letter-spacing:-.03
   .testimonial-grid{grid-template-columns:1fr}
   .testimonial-card p{font-size:.86rem;line-height:1.48}
 }
+
+/* Testimonial excerpts + full-text modal */
+.testimonial-card{position:relative}
+.testimonial-read{margin-top:12px;padding:0;border:0;background:transparent;color:var(--red);font-family:var(--sans);font-size:.58rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;cursor:pointer;text-align:left}
+.testimonial-read:hover,.testimonial-read:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.testimonial-dialog{width:min(760px,calc(100% - 32px));max-height:min(82vh,820px);padding:0;border:1px solid rgba(23,29,27,.16);background:#f6f2ea;color:#1d2421;box-shadow:0 28px 90px rgba(0,0,0,.38)}
+.testimonial-dialog::backdrop{background:rgba(3,8,7,.78);backdrop-filter:blur(3px)}
+.testimonial-dialog-inner{position:relative;padding:clamp(26px,4vw,48px)}
+.testimonial-dialog h3{font-family:var(--display);font-size:clamp(2rem,4vw,3.1rem);line-height:.96;margin:0 46px 4px 0;letter-spacing:-.035em}
+.testimonial-role{margin:0 46px 22px 0;color:#6f7672;font-size:.72rem;line-height:1.45;text-transform:uppercase;letter-spacing:.09em}
+.testimonial-full-copy{border-top:1px solid rgba(23,29,27,.14);padding-top:20px}
+.testimonial-full-copy p{margin:0 0 15px;font-family:var(--display);font-size:clamp(1rem,1.7vw,1.18rem);line-height:1.52;color:#303734}
+.testimonial-full-copy p:last-child{margin-bottom:0}
+.testimonial-close{position:absolute;right:18px;top:16px;width:38px;height:38px;border:1px solid rgba(23,29,27,.2);background:transparent;color:#1d2421;font-size:1.6rem;line-height:1;cursor:pointer}
+.testimonial-close:hover,.testimonial-close:focus-visible{border-color:var(--red);color:var(--red)}
+body.testimonial-modal-open{overflow:hidden}
+@media(max-width:700px){
+  .testimonial-read{font-size:.6rem}
+  .testimonial-dialog{width:calc(100% - 20px);max-height:88vh}
+  .testimonial-dialog-inner{padding:24px 20px 26px}
+  .testimonial-dialog h3{font-size:2.2rem}
+  .testimonial-full-copy p{font-size:1rem;line-height:1.5}
+}
