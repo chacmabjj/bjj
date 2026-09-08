@@ -194,3 +194,46 @@ h1,h2,h3{margin:0;font-family:var(--display);font-weight:700;letter-spacing:-.03
 @media(max-width:390px){
   .coaching-card{grid-template-columns:40% 60%;height:222px}
 }
+
+/* FINAL UPDATE — horizontal hero + four approved testimonials */
+.hero-media img{
+  object-position:58% 32%;
+  transform:none;
+  filter:saturate(.9) contrast(1.04) brightness(.88);
+}
+.hero-shade{
+  background:
+    linear-gradient(90deg,rgba(5,13,12,.995) 0%,rgba(5,13,12,.975) 25%,rgba(5,13,12,.84) 39%,rgba(5,13,12,.34) 56%,rgba(5,13,12,.08) 73%,rgba(5,13,12,.24) 100%),
+    linear-gradient(180deg,rgba(5,13,12,.16),transparent 52%,rgba(5,13,12,.56));
+}
+.testimonial-grid{
+  grid-template-columns:clamp(220px,16vw,285px) repeat(2,minmax(0,1fr));
+  grid-auto-flow:row;
+  align-items:stretch;
+}
+.testimonial-heading{grid-row:1 / span 2}
+.testimonial-card{justify-content:flex-start;padding:clamp(16px,1.25vw,22px)}
+.testimonial-card p{font-size:clamp(.76rem,.64vw,.9rem);line-height:1.43}
+.testimonial-card footer{margin-top:auto;padding-top:10px}
+
+@media (min-width:1600px){
+  .hero{height:clamp(560px,31vw,640px);min-height:560px}
+  .hero-media img{object-position:58% 28%}
+}
+@media (max-width:1120px){
+  .hero-media img{object-position:58% 30%}
+}
+@media (max-width:980px){
+  .hero-media img{object-position:58% 34%}
+  .testimonial-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .testimonial-heading{grid-column:1/-1;grid-row:auto;padding-right:0}
+}
+@media (max-width:700px){
+  .hero-media img{object-position:58% 36%;opacity:.78}
+  .hero-shade{background:
+    linear-gradient(180deg,rgba(5,13,12,.96) 0%,rgba(5,13,12,.80) 42%,rgba(5,13,12,.25) 70%,rgba(5,13,12,.86) 100%),
+    linear-gradient(90deg,rgba(5,13,12,.80),rgba(5,13,12,.18));
+  }
+  .testimonial-grid{grid-template-columns:1fr}
+  .testimonial-card p{font-size:.86rem;line-height:1.48}
+}
