@@ -1,60 +1,18 @@
 (() => {
   const WHATSAPP_NUMBER = '27768858313';
   const WHATSAPP_MESSAGE = 'Hi Saul, I would like to discuss private Jiu-Jitsu training.';
-
   const header = document.querySelector('[data-header]');
   const menuButton = document.querySelector('[data-menu-toggle]');
   const nav = document.querySelector('[data-nav]');
-
-  // Ensure the session-request page is available from the primary navigation.
-  if (nav && !nav.querySelector('a[href="request-session.html"]')) {
-    const requestLink = document.createElement('a');
-    requestLink.href = 'request-session.html';
-    requestLink.textContent = 'Request a session';
-    nav.appendChild(requestLink);
-  }
-
-  const updateHeader = () => {
-    if (header) header.classList.toggle('is-scrolled', window.scrollY > 16);
-  };
-  updateHeader();
-  window.addEventListener('scroll', updateHeader, { passive: true });
-
-  menuButton?.addEventListener('click', () => {
-    const open = menuButton.getAttribute('aria-expanded') === 'true';
-    menuButton.setAttribute('aria-expanded', String(!open));
-    nav?.classList.toggle('is-open', !open);
-  });
-
-  nav?.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('is-open');
-      menuButton?.setAttribute('aria-expanded', 'false');
-    });
-  });
-
-  const whatsappLinks = document.querySelectorAll('[data-whatsapp]');
-  if (WHATSAPP_NUMBER) {
-    const href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
-    whatsappLinks.forEach((link) => {
-      link.href = href;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-    });
-  }
-
+  const updateHeader = () => { if (header) header.classList.toggle('is-scrolled', window.scrollY > 16); };
+  updateHeader(); window.addEventListener('scroll', updateHeader, { passive: true });
+  menuButton?.addEventListener('click', () => { const open = menuButton.getAttribute('aria-expanded') === 'true'; menuButton.setAttribute('aria-expanded', String(!open)); nav?.classList.toggle('is-open', !open); });
+  nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => { nav.classList.remove('is-open'); menuButton?.setAttribute('aria-expanded', 'false'); }));
+  const href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+  document.querySelectorAll('[data-whatsapp]').forEach((link) => { link.href = href; link.target = '_blank'; link.rel = 'noopener noreferrer'; });
   const revealNodes = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -32px 0px' });
+    const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); } }), { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
     revealNodes.forEach((node) => observer.observe(node));
-  } else {
-    revealNodes.forEach((node) => node.classList.add('is-visible'));
-  }
+  } else revealNodes.forEach((node) => node.classList.add('is-visible'));
 })();

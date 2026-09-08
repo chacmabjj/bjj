@@ -35,21 +35,17 @@
       <a class="brand" href="index.html#top" aria-label="CHACMA BJJ home">
         <img src="assets/images/logo-horizontal-dark.png" alt="CHACMA BJJ" class="brand-logo">
       </a>
-
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" data-menu-toggle>
         <span></span><span></span><span></span><span class="sr-only">Toggle navigation</span>
       </button>
-
       <nav id="nav" class="nav session-nav" aria-label="Primary" data-nav>
         <a href="index.html#top">Home</a>
         <a href="index.html#about">About</a>
         <a href="index.html#training">Training</a>
         <a href="index.html#locations">Locations</a>
         <a href="index.html#testimonials">Testimonials</a>
-        <a href="index.html#contact">Contact</a>
-        <a class="is-active" href="request-session.html" aria-current="page">Request a session</a>
+        <a class="is-active" href="request-session.html" aria-current="page">Request Session</a>
       </nav>
-
       <div class="header-actions">
         <a class="button button-small" href="#request-form">Request a session</a>
         <div class="header-kicker">Cape Town<br>Winelands<br>and beyond</div>
@@ -69,18 +65,11 @@
             <a class="button button-ghost" href="#how-it-works">How it works</a>
           </div>
         </div>
-
         <aside class="session-principle reveal" aria-label="Private coaching principles">
-          <div class="session-mark-wrap">
-            <img src="assets/images/logo-mark-brand.webp" alt="" class="session-mark" aria-hidden="true">
-          </div>
+          <div class="session-mark-wrap"><img src="assets/images/logo-mark-brand.webp" alt="" class="session-mark" aria-hidden="true"></div>
           <p class="eyebrow">Built around you</p>
           <h2>No fixed timetable.<br>No one-size-fits-all syllabus.</h2>
-          <div class="principle-list">
-            <span>Choose a preferred day and time</span>
-            <span>Train at a practical location</span>
-            <span>Set the focus around your goals</span>
-          </div>
+          <div class="principle-list"><span>Choose a preferred day and time</span><span>Train at a practical location</span><span>Set the focus around your goals</span></div>
         </aside>
       </div>
     </section>
@@ -101,158 +90,44 @@
           <p class="eyebrow">Request your session</p>
           <h2 id="request-title">Give Saul enough to make the next step easy.</h2>
           <p>You do not need to know exactly what programme you need. The useful information is simply who you are, when you would like to train, roughly where you are and what you want from the session.</p>
-
           <div class="request-notes">
-            <div>
-              <strong>This is a request, not a confirmed booking.</strong>
-              <span>Saul will confirm the date, time, location and practical arrangements directly with you.</span>
-            </div>
-            <div>
-              <strong>Keep private information private.</strong>
-              <span>You do not need to provide medical, personal or sensitive background here. Discuss anything relevant directly with Saul if and when necessary.</span>
-            </div>
+            <div><strong>This is a request, not a confirmed booking.</strong><span>Saul will confirm the date, time, location and practical arrangements directly with you.</span></div>
+            <div><strong>Keep private information private.</strong><span>You do not need to provide medical, personal or sensitive background here. Discuss anything relevant directly with Saul if and when necessary.</span></div>
           </div>
         </div>
 
         <form class="session-form reveal" id="session-request-form" novalidate>
-          <div class="form-section-head">
-            <span>01</span>
-            <div><strong>Your details</strong><small>How Saul can reach you</small></div>
-          </div>
-
+          <div class="form-section-head"><span>01</span><div><strong>Your details</strong><small>How Saul can reach you</small></div></div>
           <div class="form-grid form-grid-2">
-            <label class="form-field">
-              <span>Name <em>*</em></span>
-              <input type="text" name="name" autocomplete="name" required placeholder="Your name">
-            </label>
-            <label class="form-field">
-              <span>Email <em>*</em></span>
-              <input type="email" name="email" autocomplete="email" required placeholder="you@example.com">
-            </label>
-            <label class="form-field">
-              <span>Mobile / WhatsApp</span>
-              <input type="tel" name="phone" autocomplete="tel" placeholder="+27 ...">
-            </label>
-            <label class="form-field">
-              <span>Preferred contact</span>
-              <select name="contact_method">
-                <option>Email</option>
-                <option>WhatsApp</option>
-                <option>Phone call</option>
-                <option>No preference</option>
-              </select>
-            </label>
+            <label class="form-field"><span>Name <em>*</em></span><input type="text" name="name" autocomplete="name" required placeholder="Your name"></label>
+            <label class="form-field"><span>Email <em>*</em></span><input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label>
+            <label class="form-field"><span>Mobile / WhatsApp</span><input type="tel" name="phone" autocomplete="tel" placeholder="+27 ..."></label>
+            <label class="form-field"><span>Preferred contact</span><select name="contact_method"><option>Email</option><option>WhatsApp</option><option>Phone call</option><option>No preference</option></select></label>
           </div>
 
-          <div class="form-section-head">
-            <span>02</span>
-            <div><strong>The training</strong><small>Enough context to shape the session</small></div>
-          </div>
-
+          <div class="form-section-head"><span>02</span><div><strong>The training</strong><small>Enough context to shape the session</small></div></div>
           <div class="form-grid form-grid-2">
-            <label class="form-field">
-              <span>Session format <em>*</em></span>
-              <select name="session_format" required>
-                <option value="">Choose one</option>
-                <option>One-to-one coaching</option>
-                <option>Two-person / private pair</option>
-                <option>Small-group session</option>
-                <option>Youth / child coaching</option>
-                <option>Not sure yet</option>
-              </select>
-            </label>
-            <label class="form-field">
-              <span>Experience level</span>
-              <select name="experience">
-                <option>Never trained</option>
-                <option>Beginner</option>
-                <option>Some experience</option>
-                <option>Experienced</option>
-                <option>Competition / performance</option>
-              </select>
-            </label>
-            <label class="form-field">
-              <span>Training focus</span>
-              <select name="focus">
-                <option>General Jiu-Jitsu / technical development</option>
-                <option>Beginner foundations</option>
-                <option>Self-defence</option>
-                <option>Competition / performance</option>
-                <option>Youth development</option>
-                <option>Not sure — discuss with Saul</option>
-              </select>
-            </label>
-            <label class="form-field">
-              <span>Gi / no-gi</span>
-              <select name="gi_preference">
-                <option>No preference</option>
-                <option>Gi</option>
-                <option>No-gi</option>
-                <option>Both</option>
-                <option>Not sure</option>
-              </select>
-            </label>
+            <label class="form-field"><span>Session format <em>*</em></span><select name="session_format" required><option value="">Choose one</option><option>One-to-one coaching</option><option>Two-person / private pair</option><option>Small-group session</option><option>Youth / child coaching</option><option>Not sure yet</option></select></label>
+            <label class="form-field"><span>Experience level</span><select name="experience"><option>Never trained</option><option>Beginner</option><option>Some experience</option><option>Experienced</option><option>Competition / performance</option></select></label>
+            <label class="form-field"><span>Training focus</span><select name="focus"><option>General Jiu-Jitsu / technical development</option><option>Beginner foundations</option><option>Self-defence</option><option>Competition / performance</option><option>Youth development</option><option>Not sure — discuss with Saul</option></select></label>
+            <label class="form-field"><span>Gi / no-gi</span><select name="gi_preference"><option>No preference</option><option>Gi</option><option>No-gi</option><option>Both</option><option>Not sure</option></select></label>
           </div>
 
-          <div class="form-section-head">
-            <span>03</span>
-            <div><strong>When and where</strong><small>Your preferred practical arrangement</small></div>
-          </div>
-
+          <div class="form-section-head"><span>03</span><div><strong>When and where</strong><small>Your preferred practical arrangement</small></div></div>
           <div class="form-grid form-grid-2">
-            <label class="form-field">
-              <span>Preferred date <em>*</em></span>
-              <input type="date" name="preferred_date" required data-preferred-date>
-            </label>
-            <label class="form-field">
-              <span>Preferred time <em>*</em></span>
-              <input type="time" name="preferred_time" required>
-            </label>
-            <label class="form-field">
-              <span>Alternative date</span>
-              <input type="date" name="alternative_date" data-alternative-date>
-            </label>
-            <label class="form-field">
-              <span>Alternative time</span>
-              <input type="time" name="alternative_time">
-            </label>
-            <label class="form-field form-field-wide">
-              <span>Area / suburb <em>*</em></span>
-              <input type="text" name="location" required placeholder="e.g. Constantia, Paarl, Stellenbosch">
-            </label>
-            <label class="form-field form-field-wide">
-              <span>Venue preference</span>
-              <select name="venue_preference">
-                <option>Flexible — discuss with Saul</option>
-                <option>My home</option>
-                <option>My gym / training venue</option>
-                <option>Workplace / private venue</option>
-                <option>Please suggest a suitable venue</option>
-              </select>
-            </label>
+            <label class="form-field"><span>Preferred date <em>*</em></span><input type="date" name="preferred_date" required data-preferred-date></label>
+            <label class="form-field"><span>Preferred time <em>*</em></span><input type="time" name="preferred_time" required></label>
+            <label class="form-field"><span>Alternative date</span><input type="date" name="alternative_date" data-alternative-date></label>
+            <label class="form-field"><span>Alternative time</span><input type="time" name="alternative_time"></label>
+            <label class="form-field form-field-wide"><span>Area / suburb <em>*</em></span><input type="text" name="location" required placeholder="e.g. Constantia, Paarl, Stellenbosch"></label>
+            <label class="form-field form-field-wide"><span>Venue preference</span><select name="venue_preference"><option>Flexible — discuss with Saul</option><option>My home</option><option>My gym / training venue</option><option>Workplace / private venue</option><option>Please suggest a suitable venue</option></select></label>
           </div>
 
-          <div class="form-section-head">
-            <span>04</span>
-            <div><strong>Anything useful to add?</strong><small>Optional</small></div>
-          </div>
-
-          <label class="form-field">
-            <span>Goals, questions or practical notes</span>
-            <textarea name="notes" rows="5" placeholder="What would you like to work on, or is there anything practical Saul should know before contacting you?"></textarea>
-          </label>
-
-          <label class="form-check">
-            <input type="checkbox" name="acknowledgement" required>
-            <span>I understand that this submits a session request and that the booking is only confirmed once Saul agrees the date, time and arrangements with me.</span>
-          </label>
-
+          <div class="form-section-head"><span>04</span><div><strong>Anything useful to add?</strong><small>Optional</small></div></div>
+          <label class="form-field"><span>Goals, questions or practical notes</span><textarea name="notes" rows="5" placeholder="What would you like to work on, or is there anything practical Saul should know before contacting you?"></textarea></label>
+          <label class="form-check"><input type="checkbox" name="acknowledgement" required><span>I understand that this submits a session request and that the booking is only confirmed once Saul agrees the date, time and arrangements with me.</span></label>
           <div class="form-error" data-form-error role="alert" hidden></div>
-
-          <div class="form-actions">
-            <button class="button form-submit" type="submit">Create email request</button>
-            <button class="button button-ghost-dark" type="button" data-session-whatsapp>Send via WhatsApp instead</button>
-          </div>
+          <div class="form-actions"><button class="button form-submit" type="submit">Create email request</button><button class="button button-ghost-dark" type="button" data-session-whatsapp>Send via WhatsApp instead</button></div>
           <p class="transport-note">“Create email request” opens your email application with the completed request addressed to Saul. Nothing is sent until you press Send in your email application.</p>
         </form>
       </div>
@@ -260,10 +135,7 @@
 
     <section class="how-section section-dark" id="how-it-works" aria-labelledby="how-title">
       <div class="shell">
-        <div class="how-head reveal">
-          <p class="eyebrow">What happens next</p>
-          <h2 id="how-title">Request. Confirm. Train.</h2>
-        </div>
+        <div class="how-head reveal"><p class="eyebrow">What happens next</p><h2 id="how-title">Request. Confirm. Train.</h2></div>
         <div class="how-grid">
           <article class="how-card reveal"><span>01</span><h3>Send the request</h3><p>Give Saul your preferred time, location and enough context to understand what you are looking for.</p></article>
           <article class="how-card reveal"><span>02</span><h3>Saul confirms the details</h3><p>He will respond directly, confirm availability and resolve any timing, venue or training questions with you.</p></article>
@@ -274,38 +146,19 @@
 
     <section class="session-faq section-light" aria-labelledby="faq-title">
       <div class="shell faq-grid">
-        <div class="faq-heading reveal">
-          <p class="eyebrow">Before you request</p>
-          <h2 id="faq-title">A few useful answers.</h2>
-        </div>
+        <div class="faq-heading reveal"><p class="eyebrow">Before you request</p><h2 id="faq-title">A few useful answers.</h2></div>
         <div class="faq-list">
-          <details class="reveal">
-            <summary>Do I need any Jiu-Jitsu experience?</summary>
-            <p>No. Private coaching works particularly well for complete beginners because Saul can set the pace and explain the fundamentals without the pressure of keeping up with a class.</p>
-          </details>
-          <details class="reveal">
-            <summary>Can I request a session for my child?</summary>
-            <p>Yes. Choose “Youth / child coaching” in the form. Saul can then discuss age, goals and the practical setup directly with the parent or guardian.</p>
-          </details>
-          <details class="reveal">
-            <summary>What if I am flexible on date or time?</summary>
-            <p>Use the alternative date and time fields or mention your wider availability in the notes. More flexibility usually makes arranging a session easier.</p>
-          </details>
-          <details class="reveal">
-            <summary>Where can sessions take place?</summary>
-            <p>Depending on what is practical, sessions can take place at your home, gym, workplace or another suitable venue across Cape Town, the Winelands and surrounding areas.</p>
-          </details>
+          <details class="reveal"><summary>Do I need any Jiu-Jitsu experience?</summary><p>No. Private coaching works particularly well for complete beginners because Saul can set the pace and explain the fundamentals without the pressure of keeping up with a class.</p></details>
+          <details class="reveal"><summary>Can I request a session for my child?</summary><p>Yes. Choose “Youth / child coaching” in the form. Saul can then discuss age, goals and the practical setup directly with the parent or guardian.</p></details>
+          <details class="reveal"><summary>What if I am flexible on date or time?</summary><p>Use the alternative date and time fields or mention your wider availability in the notes. More flexibility usually makes arranging a session easier.</p></details>
+          <details class="reveal"><summary>Where can sessions take place?</summary><p>Depending on what is practical, sessions can take place at your home, gym, workplace or another suitable venue across Cape Town, the Winelands and surrounding areas.</p></details>
         </div>
       </div>
     </section>
 
     <section class="session-contact section-dark">
       <div class="shell session-contact-grid reveal">
-        <div>
-          <p class="eyebrow">Prefer a conversation first?</p>
-          <h2>Speak to Saul directly.</h2>
-          <p>If you are not sure what to request, start with a short WhatsApp conversation instead.</p>
-        </div>
+        <div><p class="eyebrow">Prefer a conversation first?</p><h2>Speak to Saul directly.</h2><p>If you are not sure what to request, start with a short WhatsApp conversation instead.</p></div>
         <a class="button button-whatsapp" href="#" data-whatsapp>Chat on WhatsApp</a>
       </div>
     </section>
@@ -313,9 +166,10 @@
 
   <footer class="footer">
     <div class="shell footer-inner">
-      <a class="brand footer-brand" href="index.html#top" aria-label="CHACMA BJJ home"><img src="assets/images/logo-horizontal-dark.png" alt="CHACMA BJJ" class="brand-logo footer-logo"></a>
-      <div class="footer-meta">Private Jiu-Jitsu & martial arts coaching · Cape Town & the Winelands</div>
-      <div class="footer-note">Private Jiu-Jitsu. Built around you.</div>
+      <a class="brand footer-brand" href="index.html#top" aria-label="CHACMA BJJ home"><img src="assets/images/logo-horizontal-dark.png" alt="CHACMA BJJ" class="footer-logo"></a>
+      <div class="footer-meta">Private Jiu-Jitsu & martial arts coaching · Cape Town & the Winelands<br><em>Private Jiu-Jitsu. Built around you.</em></div>
+      <div class="footer-social"><a href="https://www.instagram.com/chacmabjj/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.facebook.com/profile.php?id=61593930403911" target="_blank" rel="noopener noreferrer">Facebook</a></div>
+      <div class="footer-note">© 2026 CHACMA BJJ<br>All rights reserved</div>
     </div>
   </footer>
 </body>
