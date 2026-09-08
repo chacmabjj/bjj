@@ -11,13 +11,14 @@
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1110">
-  <meta name="description" content="Private Jiu-Jitsu and martial arts coaching with Professor Saul Abelson across Cape Town and the Winelands. One-to-one, small-group, gi and no-gi coaching built around you.">
+  <meta name="theme-color" content="#09100f">
+  <meta name="description" content="Private Jiu-Jitsu and martial arts coaching with Professor Saul Abelson across Cape Town and the Winelands. Flexible, discreet, one-to-one and small-group coaching built around you.">
   <meta property="og:title" content="CHACMA | Private Jiu-Jitsu built around you">
-  <meta property="og:description" content="One-to-one and small-group Jiu-Jitsu and martial arts coaching across Cape Town and the Winelands.">
+  <meta property="og:description" content="Private Jiu-Jitsu and martial arts coaching with Professor Saul Abelson across Cape Town and the Winelands.">
   <meta property="og:type" content="website">
   <title>CHACMA | Private Jiu-Jitsu built around you</title>
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
@@ -28,40 +29,50 @@
     <div class="shell header-inner">
       <a class="brand" href="#top" aria-label="CHACMA home">
         <img src="assets/icons/logo-mark.svg" alt="" class="brand-mark">
-        <span class="brand-word">CHACMA</span>
-        <span class="brand-line">People. Discipline. A higher ground.</span>
+        <div class="brand-text">
+          <span class="brand-word">CHACMA</span>
+          <span class="brand-line">People. Discipline. A higher ground.</span>
+        </div>
       </a>
+
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" data-menu-toggle>
         <span></span><span></span><span></span><span class="sr-only">Toggle navigation</span>
       </button>
+
       <nav id="nav" class="nav" aria-label="Primary" data-nav>
+        <a href="#top">Home</a>
         <a href="#about">About</a>
         <a href="#training">Training</a>
         <a href="#locations">Locations</a>
         <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
-        <a class="button button-small" href="#contact" data-whatsapp>Discuss private training</a>
       </nav>
+
+      <div class="header-actions">
+        <a class="button button-small" href="#contact" data-whatsapp>Discuss private training</a>
+        <div class="header-kicker">Cape Town<br>Winelands<br>and beyond</div>
+      </div>
     </div>
   </header>
 
   <main id="main">
-    <section id="top" class="hero">
-      <div class="hero-media" aria-hidden="true">
-        <img src="assets/images/saul-baseline.jpg" alt="">
-      </div>
-      <div class="hero-overlay"></div>
+    <section id="top" class="hero section-dark">
       <div class="shell hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Private martial arts coaching · Cape Town & the Winelands</p>
-          <h1>Private Jiu-Jitsu.<br><span>Built around you.</span></h1>
-          <p class="hero-lede">One-to-one and small-group Jiu-Jitsu and martial arts coaching with Professor Saul Abelson. Personal, flexible and structured around your goals, schedule, experience, body and individual needs.</p>
+          <p class="eyebrow">Private martial arts coaching</p>
+          <h1>Private Jiu-Jitsu.<br>Built around you.</h1>
+          <p class="hero-lede">One-to-one and small-group Jiu-Jitsu and martial arts coaching with Professor Saul Abelson. 25+ years’ experience. Gi and no-gi. Adults and children. Flexible scheduling. At your home, gym or venue across Cape Town, the Winelands and surrounding areas.</p>
           <div class="hero-actions">
             <a class="button" href="#contact" data-whatsapp>Discuss private training</a>
             <a class="button button-ghost" href="#about">Meet Saul</a>
           </div>
         </div>
-        <aside class="hero-note reveal" aria-label="Positioning statement">
+
+        <div class="hero-art reveal">
+          <img src="assets/images/hero-kids-generated.png" alt="Professor Saul Abelson coaching children in Brazilian Jiu-Jitsu.">
+        </div>
+
+        <aside class="hero-side reveal" aria-label="Positioning lines">
           <span>A calmer</span>
           <span>stronger</span>
           <span>more capable</span>
@@ -74,23 +85,44 @@
       <div class="shell credentials">
         <div><strong>BJJ black belt</strong><span>Brazilian Jiu-Jitsu</span></div>
         <div><strong>Judo black belt</strong><span>Judo</span></div>
-        <div><strong>25+ years</strong><span>Martial arts experience</span></div>
-        <div><strong>Gi + no-gi</strong><span>All experience levels</span></div>
-        <div><strong>Mobile coaching</strong><span>At your home, gym or venue</span></div>
+        <div><strong>25+ years</strong><span>Experience</span></div>
+        <div><strong>Gi + no-gi</strong><span>All levels</span></div>
+        <div><strong>Mobile coaching</strong><span>At your home or venue</span></div>
+        <div><strong>Adults, children</strong><span>Women, all abilities</span></div>
       </div>
     </section>
 
-    <section class="why section" aria-labelledby="why-title">
+    <section class="why section section-light" aria-labelledby="why-title">
       <div class="shell why-grid">
-        <div class="why-lead reveal">
-          <p class="eyebrow">Why private?</p>
-          <h2 id="why-title">Faster progress.<br>A safer journey.<br>On your terms.</h2>
+        <div class="why-visual reveal">
+          <img src="assets/images/cape-abstract.jpg" alt="Cape Town landscape">
+          <div class="why-overlay-text">
+            <p class="eyebrow">Why private?</p>
+            <h2 id="why-title">Faster progress.<br>A safer journey.<br>On your terms.</h2>
+          </div>
         </div>
+
         <div class="benefits">
-          <article class="benefit reveal"><span class="benefit-number">01</span><h3>Faster learning</h3><p>Focused attention lets Saul diagnose problems, correct details and accelerate progress.</p></article>
-          <article class="benefit reveal"><span class="benefit-number">02</span><h3>Safer training</h3><p>Intensity, partners and progression are controlled around your level, history and needs.</p></article>
-          <article class="benefit reveal"><span class="benefit-number">03</span><h3>Your schedule</h3><p>Train when and where it works for you, with mobile coaching across greater Cape Town and the Winelands.</p></article>
-          <article class="benefit reveal"><span class="benefit-number">04</span><h3>Flexible for you</h3><p>Beginner or fighter, child or adult, gi or no-gi: the coaching adapts to the person in front of Saul.</p></article>
+          <article class="benefit reveal">
+            <div class="benefit-icon">↗</div>
+            <h3>Faster learning</h3>
+            <p>Focused attention accelerates your progress.</p>
+          </article>
+          <article class="benefit reveal">
+            <div class="benefit-icon">◯</div>
+            <h3>Safer training</h3>
+            <p>Personalised coaching in a controlled environment.</p>
+          </article>
+          <article class="benefit reveal">
+            <div class="benefit-icon">□</div>
+            <h3>Your schedule</h3>
+            <p>Train when it works for you, at your place or mine.</p>
+          </article>
+          <article class="benefit reveal">
+            <div class="benefit-icon">◎</div>
+            <h3>Flexible for you</h3>
+            <p>Your goals, experience level, age, body type and individual needs shape the coaching.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -98,81 +130,175 @@
     <section id="training" class="training section section-light" aria-labelledby="training-title">
       <div class="shell">
         <div class="section-head reveal">
-          <div><p class="eyebrow">Training options</p><h2 id="training-title">Real skills. Individual pathways.</h2></div>
-          <p>Start with your objective, not a generic timetable.</p>
+          <div>
+            <p class="eyebrow">Training options</p>
+            <h2 id="training-title">Real skills. Real people. A stronger you.</h2>
+          </div>
         </div>
+
         <div class="training-grid">
           <article class="training-card card-image reveal">
             <img src="assets/images/training-private.jpg" alt="Private Jiu-Jitsu training. Client identity intentionally obscured.">
-            <div><h3>One-to-one coaching</h3><p>Fully personalised attention. Build skill, confidence and a game that works for your body.</p></div>
+            <div>
+              <h3>One-to-one coaching</h3>
+              <p>Fully personalised attention. Build your skills, confidence and own pace.</p>
+            </div>
           </article>
-          <article class="training-card reveal"><span>02</span><h3>Technical development</h3><p>Refine fundamentals, solve specific problems and sharpen advanced details in gi or no-gi.</p></article>
-          <article class="training-card reveal"><span>03</span><h3>Self-defence</h3><p>Practical control, striking awareness and decision-making drawn from Saul’s broader martial-arts background.</p></article>
-          <article class="training-card reveal"><span>04</span><h3>Youth coaching</h3><p>Structured, patient coaching for children of different ages, temperaments and abilities, including special needs.</p></article>
-          <article class="training-card reveal"><span>05</span><h3>Competition & performance</h3><p>High-level technical work for serious practitioners, competitors and professional fighters.</p></article>
-          <article class="training-card reveal"><span>06</span><h3>Private pairs & small groups</h3><p>Train with a partner, spouse, family or small group without losing the benefits of individual attention.</p></article>
+
+          <article class="training-card card-image reveal">
+            <img src="assets/images/training-detail.jpg" alt="Close-up detail of Jiu-Jitsu belt and uniform.">
+            <div>
+              <h3>Technical development</h3>
+              <p>Refine your fundamentals and advanced game. Gi and no-gi.</p>
+            </div>
+          </article>
+
+          <article class="training-card card-image reveal">
+            <img src="assets/images/program-self-defence.webp" alt="Martial arts striking practice.">
+            <div>
+              <h3>Self-defence</h3>
+              <p>Practical skills for real-world situations. Build confidence and awareness.</p>
+            </div>
+          </article>
+
+          <article class="training-card card-image reveal">
+            <img src="assets/images/program-youth.webp" alt="Professor Saul Abelson coaching children.">
+            <div>
+              <h3>Youth coaching</h3>
+              <p>Build confidence, discipline and respect. Children of all ages and abilities, including special-needs children.</p>
+            </div>
+          </article>
+
+          <article class="training-card card-image reveal">
+            <img src="assets/images/program-competition.webp" alt="Brazilian Jiu-Jitsu competition training.">
+            <div>
+              <h3>Competition & performance</h3>
+              <p>High-level coaching for athletes. Strategy, training, mindset and performance.</p>
+            </div>
+          </article>
+
+          <article class="training-card card-image reveal">
+            <img src="assets/images/cape-abstract.jpg" alt="Cape Town and Winelands landscape.">
+            <div>
+              <h3>Mobile coaching</h3>
+              <p>I travel to your home, gym, workplace or venue across Cape Town, the Winelands and beyond.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about section" aria-labelledby="about-title">
+    <section id="about" class="about section section-dark" aria-labelledby="about-title">
       <div class="shell about-grid">
-        <div class="about-image reveal"><img src="assets/images/saul-portrait.jpg" alt="Professor Saul Abelson in a Brazilian Jiu-Jitsu gi"></div>
-        <div class="about-copy reveal">
+        <div class="about-panel about-portrait reveal">
+          <img src="assets/images/saul-portrait.jpg" alt="Professor Saul Abelson portrait.">
+          <div class="script-line">Better humans<br>Stronger communities</div>
+        </div>
+
+        <div class="about-panel about-copy reveal">
           <p class="eyebrow">Meet Saul</p>
           <h2 id="about-title">Experience you can trust.</h2>
-          <p class="about-lede">Professor Saul Abelson has spent more than 25 years training, teaching and coaching across multiple martial arts. His approach is technical, practical and deliberately adaptable.</p>
-          <div class="credential-list">
-            <div><strong>Brazilian Jiu-Jitsu</strong><span>Black belt · Gracie Barra lineage</span></div>
-            <div><strong>Judo</strong><span>Black belt</span></div>
-            <div><strong>Japanese jiu-jitsu</strong><span>Black belt</span></div>
-            <div><strong>Combat breadth</strong><span>Boxing and kickboxing background</span></div>
-            <div><strong>Performance</strong><span>Coached professional fighters</span></div>
-            <div><strong>Duty of care</strong><span>First-aid trained · experience with special-needs children</span></div>
+          <p>I’m Professor Saul Abelson, and I’ve devoted over 25 years to the study, practice and teaching of martial arts. My approach is individual, intelligent and rooted in real experience on the mats and in life.</p>
+          <div class="about-facts">
+            <span>25+ years’ experience</span>
+            <span>Black belt Brazilian Jiu-Jitsu</span>
+            <span>Black belt Judo</span>
+            <span>Black belt Japanese jiu-jitsu</span>
+            <span>Boxing & kickboxing background</span>
+            <span>Coached professional fighters</span>
+            <span>First-aid trained</span>
+            <span>Works with children, including special needs</span>
+            <span>Private & small-group coaching</span>
+            <span>Travels to clients</span>
           </div>
         </div>
-        <blockquote class="about-quote reveal">“The coaching should fit the person, not force the person to fit the coaching.”<span>Working positioning line · replace with approved Saul quote</span></blockquote>
+
+        <div class="about-panel about-quote reveal">
+          <blockquote>
+            <p>Martial arts has given me a way to help people become more capable, more resilient and happier in life.</p>
+            <footer>Prof. Saul Abelson</footer>
+          </blockquote>
+          <div class="about-mini-note">Discipline<br>Kindness<br>Better humans</div>
+        </div>
       </div>
     </section>
 
-    <section id="locations" class="locations" aria-labelledby="locations-title">
-      <img src="assets/images/cape-abstract.jpg" alt="" class="locations-bg" aria-hidden="true">
-      <div class="locations-overlay"></div>
-      <div class="shell locations-content reveal">
-        <p class="eyebrow">Train where you are</p>
-        <h2 id="locations-title">Cape Town.<br>The Winelands.<br>And beyond.</h2>
-        <p>Private coaching at your home, gym, workplace or an agreed venue. Saul currently travels to clients in the Cape Town region and the Winelands, including Val de Vie.</p>
-        <a class="button button-ghost-light" href="#contact">Discuss your location</a>
+    <section id="locations" class="locations section-dark" aria-labelledby="locations-title">
+      <div class="shell locations-grid">
+        <div class="locations-visual reveal">
+          <img src="assets/images/cape-abstract.jpg" alt="Mountains and coastline in the Cape.">
+          <div class="locations-copy-overlay">
+            <p class="eyebrow">Cape Town & the Winelands</p>
+            <p>Private coaching at your home, gym, workplace or a suitable venue.</p>
+            <a class="button button-small" href="#contact">Discuss your location</a>
+          </div>
+        </div>
+
+        <div class="service-area reveal">
+          <p class="eyebrow">Train where you are</p>
+          <h2 id="locations-title">Cape Town.<br>The Winelands.<br>And beyond.</h2>
+          <p>Saul travels for private lessons across Cape Town, the Winelands, Val de Vie and surrounding areas.</p>
+          <ul>
+            <li>Cape Town</li>
+            <li>Stellenbosch</li>
+            <li>Franschhoek</li>
+            <li>Somerset West</li>
+            <li>Val de Vie</li>
+            <li>By arrangement elsewhere</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section id="testimonials" class="testimonials section section-light" aria-labelledby="testimonials-title">
       <div class="shell">
         <div class="section-head reveal">
-          <div><p class="eyebrow">Testimonials</p><h2 id="testimonials-title">Competence. Character. Trust.</h2></div>
-          <p>Client feedback on Saul’s coaching, discretion and ability to adapt the training to the person in front of him.</p>
+          <div>
+            <p class="eyebrow">Testimonials</p>
+            <h2 id="testimonials-title">Competence. Character. Trust.</h2>
+          </div>
         </div>
+
         <blockquote class="testimonial-featured reveal">
-          <div class="testimonial-kicker">Private client testimonial</div>
+          <div class="testimonial-kicker">Featured testimonial</div>
           <div class="testimonial-copy">
             <p>I cannot recommend Saul strongly enough. I have trained with a lot of different people, but Saul is one of those rare coaches who understands that good training is about more than simply teaching technique.</p>
-            <p>From the outset, he was extraordinarily accommodating of my circumstances and consistently went out of his way to make training workable. At the same time, he was completely discreet. I never felt that I had to explain more than I wanted to, nor that anything discussed or observed would become anyone else's business.</p>
-            <p>He has earned my trust and my respect. Saul's gentle, polite and professional demeanour earns both naturally. He is calm, intelligent, patient and highly attentive to the person he is training rather than simply running through a syllabus.</p>
+            <p>From the outset, he was extraordinarily accommodating of my circumstances and consistently went out of his way to make training workable. At the same time, he was completely discreet. I never felt that I had to explain more than I wanted to, nor that anything discussed or observed would become anyone else’s business.</p>
+            <p>He has earned my trust and my respect. Saul’s gentle, polite and professional demeanour earns both naturally. He is calm, intelligent, patient and highly attentive to the person he is training rather than simply running through a syllabus.</p>
             <p>Saul and Chacma-BJJ have provided an unusually positive training environment for me, and I am genuinely grateful for all his time, patience and expertise.</p>
             <p>For anyone looking for serious Brazilian Jiu-Jitsu instruction from someone with both competence and character, I would recommend Saul without reservation.</p>
           </div>
-          <footer>— David</footer>
+          <footer>David · Private client</footer>
         </blockquote>
+
+        <div class="testimonial-mini-grid reveal">
+          <article>
+            <strong>Accommodating</strong>
+            <p>Extraordinarily accommodating of my circumstances and consistently went out of his way to make training workable.</p>
+          </article>
+          <article>
+            <strong>Discreet</strong>
+            <p>Completely discreet. I never felt that I had to explain more than I wanted to.</p>
+          </article>
+          <article>
+            <strong>Attentive</strong>
+            <p>Calm, intelligent, patient and highly attentive to the person he is training.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="contact section">
+    <section id="contact" class="contact section-dark">
       <div class="shell contact-grid">
-        <div class="reveal"><p class="eyebrow">Ready to start?</p><h2>Let’s talk about your training.</h2><p>Tell Saul what you want to achieve, where you are and any practical constraints. The first step is a conversation, not a sales funnel.</p></div>
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Let’s talk on WhatsApp</p>
+          <h2>Let’s build a stronger you.</h2>
+          <p>Discuss your goals, ask a few questions, or book your first session. Quick, easy, no obligation.</p>
+        </div>
         <div class="contact-card reveal">
-          <p class="contact-status" data-contact-status>WhatsApp Saul directly to discuss your goals, location and availability.</p>
-          <a class="button" href="#contact" data-whatsapp>Discuss private training</a>
-          <p class="small">Quick conversation · no obligation · privacy respected</p>
+          <a class="button button-whatsapp" href="#" data-whatsapp>Chat on WhatsApp</a>
+          <p class="contact-meta">Train your way · Cape Town & the Winelands · Real people, real progress</p>
+          <p class="contact-number">WhatsApp: <span>+27 76 885 8313</span></p>
         </div>
       </div>
     </section>
@@ -180,9 +306,15 @@
 
   <footer class="footer">
     <div class="shell footer-inner">
-      <div class="brand footer-brand"><img src="assets/icons/logo-mark.svg" alt="" class="brand-mark"><span class="brand-word">CHACMA</span><span class="brand-line">People. Discipline. A higher ground.</span></div>
+      <a class="brand footer-brand" href="#top">
+        <img src="assets/icons/logo-mark.svg" alt="" class="brand-mark">
+        <div class="brand-text">
+          <span class="brand-word">CHACMA</span>
+          <span class="brand-line">People. Discipline. A higher ground.</span>
+        </div>
+      </a>
       <div class="footer-meta">Private Jiu-Jitsu & martial arts coaching · Cape Town & the Winelands</div>
-      <div class="footer-links"><a href="#about">About</a><a href="#training">Training</a><a href="#contact">Contact</a></div>
+      <div class="footer-note">A calmer, stronger, more capable you.</div>
     </div>
   </footer>
 </body>

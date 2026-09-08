@@ -1,5 +1,4 @@
 (() => {
-  // Saul Abelson / CHACMA business WhatsApp. Digits only, country code first.
   const WHATSAPP_NUMBER = '27768858313';
   const WHATSAPP_MESSAGE = 'Hi Saul, I would like to discuss private Jiu-Jitsu training.';
 
@@ -7,7 +6,9 @@
   const menuButton = document.querySelector('[data-menu-toggle]');
   const nav = document.querySelector('[data-nav]');
 
-  const updateHeader = () => header?.classList.toggle('is-scrolled', window.scrollY > 24);
+  const updateHeader = () => {
+    if (header) header.classList.toggle('is-scrolled', window.scrollY > 16);
+  };
   updateHeader();
   window.addEventListener('scroll', updateHeader, { passive: true });
 
@@ -25,20 +26,16 @@
   });
 
   const whatsappLinks = document.querySelectorAll('[data-whatsapp]');
-  const status = document.querySelector('[data-contact-status]');
   if (WHATSAPP_NUMBER) {
-    const target = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+    const href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
     whatsappLinks.forEach((link) => {
-      link.href = target;
+      link.href = href;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
     });
-    if (status) status.textContent = 'WhatsApp Saul directly to discuss your goals, location and availability.';
-  } else {
-    whatsappLinks.forEach((link) => { link.href = '#contact'; });
   }
 
-  const reveal = document.querySelectorAll('.reveal');
+  const revealNodes = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -47,9 +44,9 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-    reveal.forEach((el) => observer.observe(el));
+    }, { threshold: 0.12, rootMargin: '0px 0px -32px 0px' });
+    revealNodes.forEach((node) => observer.observe(node));
   } else {
-    reveal.forEach((el) => el.classList.add('is-visible'));
+    revealNodes.forEach((node) => node.classList.add('is-visible'));
   }
 })();
