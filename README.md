@@ -1,11 +1,37 @@
-# CHACMA BJJ website
+# CHACMA BJJ
 
-Replace the repository contents with this ZIP’s contents at the root. Uploading over existing files alone will leave old assets behind. Keep `CNAME` and `.nojekyll`.
+**Private Jiu-Jitsu. Built around you.**
 
-GitHub Pages serves these static files directly. No installation or build command is required. Production domain: https://www.chacmabjj.co.za/.
+The official website for CHACMA BJJ: private Jiu-Jitsu and martial arts coaching with Saul Joshua Abelson across Cape Town and the Winelands.
 
-The session form prepares an email or WhatsApp message. The visitor must press Send in their app; Saul confirms the booking. A copyable fallback appears after validation.
+Coaching centres on individual attention, technical development, controlled intensity and practical flexibility. Sessions include one-to-one coaching, private pairs and small groups, youth coaching and focused work for existing BJJ practitioners. Mobile coaching takes place at suitable venues by arrangement.
 
-GA4 property: G-R0LVV5Y407. Events: request_session_click, whatsapp_enquiry, email_enquiry, phone_enquiry, session_request_prepared, youtube_click, instagram_click and facebook_click. These measure clicks or prepared requests, not delivery. No generate_lead or confirmed-booking event is sent because the static site cannot verify either. Reconcile actual enquiries and bookings with Saul.
+**Website:** [www.chacmabjj.co.za](https://www.chacmabjj.co.za/)
 
-Inter is self-hosted under assets/fonts; retain its OFL.txt licence.
+## Website structure
+
+| File | Purpose |
+| --- | --- |
+| `index.html` | Coaching, Saul’s background, service areas, testimonials and contact routes |
+| `request-session.html` | Session enquiry form and practical information |
+| `styles.css` / `session.css` | Shared styling and session-page layout |
+| `script.js` / `session.js` | Navigation, testimonials, enquiry tracking and request preparation |
+| `assets/` | Images, icons and locally hosted Inter fonts |
+| `sitemap.xml` / `robots.txt` | Search-engine discovery |
+| `CNAME` / `.nojekyll` | GitHub Pages configuration |
+
+## Hosting and enquiries
+
+The site uses static HTML, CSS and JavaScript, hosted on GitHub Pages. It requires no framework, package installation or build step.
+
+Session requests open a prepared message in the visitor’s email application or WhatsApp. Saul confirms availability, location and arrangements directly. The website does not confirm bookings or process payments.
+
+## Contact
+
+- [Email Saul](mailto:chacmabjj@gmail.com)
+- [WhatsApp](https://wa.me/27768858313)
+- [YouTube](https://www.youtube.com/channel/UCFfan4FD1CbwkIuFp4QQ4sw)
+- [Instagram](https://www.instagram.com/chacmabjj/)
+- [Facebook](https://www.facebook.com/profile.php?id=61593930403911)
+
+Inter is distributed under the [SIL Open Font License](assets/fonts/OFL.txt).
