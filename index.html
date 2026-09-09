@@ -1,297 +1,332 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R0LVV5Y407"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-R0LVV5Y407');
-  </script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07100f">
-  <meta name="description" content="Private Jiu-Jitsu and martial arts coaching with Professor Saul Abelson across Cape Town and the Winelands. Flexible, discreet, one-to-one and small-group coaching built around you.">
-  <meta property="og:title" content="CHACMA BJJ | Private Jiu-Jitsu built around you">
-  <meta property="og:description" content="Private Jiu-Jitsu and martial arts coaching with Professor Saul Abelson across Cape Town and the Winelands.">
-  <meta property="og:type" content="website">
-  <title>CHACMA BJJ | Private Jiu-Jitsu built around you</title>
-  <link rel="icon" href="assets/icons/favicon.png" type="image/png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
-</head>
+<!DOCTYPE html>
+
+<html lang="en-ZA">
+<head><meta charset="utf-8"/>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-R0LVV5Y407"></script>
+<script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+// Retain campaign attribution without passing arbitrary query fields to GA4.
+const analyticsUrl = new URL(location.origin + location.pathname);
+const incomingParams = new URLSearchParams(location.search);
+for (const key of ['utm_source','utm_medium','utm_campaign','utm_id','utm_term','utm_content','gclid','dclid','gbraid','wbraid']) {
+  const value = incomingParams.get(key);
+  if (value && value.length <= 200) analyticsUrl.searchParams.set(key, value);
+}
+gtag('js', new Date());
+gtag('config', 'G-R0LVV5Y407', {page_location: analyticsUrl.href});</script>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#07100f" name="theme-color"/>
+<meta content="Private Jiu-Jitsu and martial arts coaching with Saul Abelson in Cape Town and the Winelands. Beginner foundations, technical BJJ and mobile private lessons." name="description"/>
+<meta content="Private BJJ &amp; Jiu-Jitsu Coaching Cape Town | CHACMA BJJ" property="og:title"/>
+<meta content="Private Jiu-Jitsu and martial arts coaching with Saul Abelson in Cape Town and the Winelands. Beginner foundations, technical BJJ and mobile private lessons." property="og:description"/>
+<meta content="website" property="og:type"/>
+<title>Private BJJ &amp; Jiu-Jitsu Coaching Cape Town | CHACMA BJJ</title>
+<link href="assets/icons/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="site.webmanifest" rel="manifest"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="styles.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script>
+<link href="https://www.chacmabjj.co.za/" rel="canonical"/>
+<link href="assets/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<meta content="https://www.chacmabjj.co.za/" property="og:url"/><meta content="CHACMA BJJ" property="og:site_name"/><meta content="en_ZA" property="og:locale"/>
+<meta content="https://www.chacmabjj.co.za/assets/images/hero-coaching.webp" property="og:image"/><meta content="1672" property="og:image:width"/><meta content="941" property="og:image:height"/><meta content="Private Jiu-Jitsu coaching with individual attention" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/><meta content="Private BJJ &amp; Jiu-Jitsu Coaching Cape Town | CHACMA BJJ" name="twitter:title"/><meta content="Private Jiu-Jitsu and martial arts coaching with Saul Abelson in Cape Town and the Winelands. Beginner foundations, technical BJJ and mobile private lessons." name="twitter:description"/><meta content="https://www.chacmabjj.co.za/assets/images/hero-coaching.webp" name="twitter:image"/>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.chacmabjj.co.za/#business",
+      "name": "CHACMA BJJ",
+      "url": "https://www.chacmabjj.co.za/",
+      "logo": "https://www.chacmabjj.co.za/assets/icons/favicon.png",
+      "email": "chacmabjj@gmail.com",
+      "telephone": "+27768858313",
+      "founder": {
+        "@id": "https://www.chacmabjj.co.za/#saul"
+      },
+      "sameAs": [
+        "https://www.youtube.com/channel/UCFfan4FD1CbwkIuFp4QQ4sw",
+        "https://www.instagram.com/chacmabjj/",
+        "https://www.facebook.com/profile.php?id=61593930403911"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.chacmabjj.co.za/#saul",
+      "name": "Saul Joshua Abelson",
+      "alternateName": "Saul Abelson",
+      "jobTitle": "Private Jiu-Jitsu coach",
+      "worksFor": {
+        "@id": "https://www.chacmabjj.co.za/#business"
+      },
+      "url": "https://www.chacmabjj.co.za/#about"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.chacmabjj.co.za/#coaching",
+      "name": "Private Jiu-Jitsu and martial arts coaching",
+      "serviceType": [
+        "Private BJJ coaching",
+        "Beginner Jiu-Jitsu",
+        "BJJ technical development",
+        "Private youth coaching",
+        "Mobile martial arts coaching"
+      ],
+      "provider": {
+        "@id": "https://www.chacmabjj.co.za/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Cape Town"
+        },
+        {
+          "@type": "Place",
+          "name": "Cape Winelands"
+        }
+      ],
+      "url": "https://www.chacmabjj.co.za/#training",
+      "description": "Private and small-group coaching with Saul Abelson. Sessions and suitable locations agreed directly."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.chacmabjj.co.za/#website",
+      "url": "https://www.chacmabjj.co.za/",
+      "name": "CHACMA BJJ",
+      "publisher": {
+        "@id": "https://www.chacmabjj.co.za/#business"
+      },
+      "inLanguage": "en-ZA"
+    }
+  ]
+}</script><link as="font" crossorigin="" href="assets/fonts/inter-400.woff2" rel="preload" type="font/woff2"/></head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header" data-header>
-    <div class="shell header-inner">
-      <a class="brand" href="#top" aria-label="CHACMA BJJ home">
-        <img src="assets/images/logo-horizontal-approved.png" alt="CHACMA BJJ – Private Jiu-Jitsu. Built around you." class="brand-logo">
-      </a>
-
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" data-menu-toggle>
-        <span></span><span></span><span></span><span class="sr-only">Toggle navigation</span>
-      </button>
-
-      <nav id="nav" class="nav" aria-label="Primary" data-nav>
-        <a href="#top">Home</a>
-        <a href="#about">About</a>
-        <a href="#training">Training</a>
-        <a href="#locations">Locations</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="request-session.html">Request Session</a>
-      </nav>
-
-      <div class="header-actions">
-        <div class="header-kicker">Cape Town · Winelands<br>Private coaching · a stronger you</div>
-        <a class="button button-small" href="request-session.html">Request a session</a>
-      </div>
-    </div>
-  </header>
-
-  <main id="main">
-    <section id="top" class="hero section-dark" aria-labelledby="hero-title">
-      <div class="hero-media" aria-hidden="true"><img src="assets/images/hero-training.webp" alt=""></div>
-      <div class="hero-shade" aria-hidden="true"></div>
-
-      <div class="shell hero-inner">
-        <div class="hero-copy reveal">
-          <p class="eyebrow eyebrow-warm">Private martial arts coaching</p>
-          <h1 id="hero-title"><span>Private Jiu-Jitsu.</span><span>Built around</span><span>you.</span></h1>
-          <p class="hero-lede">Personal Jiu-Jitsu and martial-arts coaching for beginners, experienced practitioners, children, competitors and private clients. Thoughtful, progressive and discreet — across Cape Town, the Winelands and surrounding areas.</p>
-          <div class="hero-actions">
-            <a class="button" href="request-session.html">Start a conversation</a>
-            <a class="button button-ghost button-play" href="#about">Meet Saul</a>
-          </div>
-          <div class="hero-values" aria-label="CHACMA coaching principles">
-            <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c-4-3-7-7-7-11a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4-3 8-7 11Z"/></svg><span>People<br>not ego</span></div>
-            <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18 9 7l4 7 3-5 5 9H3Z"/></svg><span>Technique<br>for life</span></div>
-            <div><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/></svg><span>A stronger<br>you</span></div>
-          </div>
-        </div>
-
-        <aside class="hero-note hero-note-top reveal">
-          <span>Same principles.</span><span>Different person.</span><span>Different pace.</span><strong>A stronger you.</strong>
-        </aside>
-        <aside class="hero-note hero-note-bottom reveal">
-          <span>Real people.</span><span>Real progress.</span><span>A higher ground.</span>
-        </aside>
-      </div>
-    </section>
-
-    <section id="training" class="coaching section-light" aria-labelledby="training-title">
-      <div class="shell coaching-grid">
-        <div class="coaching-intro reveal">
-          <p class="eyebrow">Focused coaching</p>
-          <h2 id="training-title">Real progress.</h2>
-          <span class="red-rule"></span>
-          <p>Tailored Jiu-Jitsu and martial-arts coaching for real people. Build confidence, learn practical skills and develop a stronger, more capable you — on and off the mats.</p>
-          <div class="signature">Saul Abelson</div>
-          <div class="coach-role">Professor Saul Abelson<br>Founder & head coach</div>
-        </div>
-
-        <div class="coaching-cards">
-          <article class="coaching-card reveal">
-            <div class="card-image"><img src="assets/images/service-one.webp" alt="Professor Saul Abelson coaching a private Jiu-Jitsu student."></div>
-            <div class="card-body"><div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M5 21v-2c0-4 2.6-7 7-7s7 3 7 7v2"/></svg></div><h3>One-to-One Coaching</h3><p>A fully personalised experience. Build skill, confidence and technical depth at your own pace.</p><a href="#" data-whatsapp-topic="one-to-one Jiu-Jitsu coaching">Learn more →</a></div>
-          </article>
-          <article class="coaching-card reveal">
-            <div class="card-image"><img src="assets/images/service-pairs.webp" alt="Private Jiu-Jitsu coaching adapted to an adult student."></div>
-            <div class="card-body"><div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M3 20c0-4 2-7 5-7s5 3 5 7M11 20c0-4 2-7 5-7s5 3 5 7"/></svg></div><h3>Private Pairs & Small Groups</h3><p>Train with a partner, friend or family member in a focused, practical and enjoyable format.</p><a href="#" data-whatsapp-topic="private pairs or small-group Jiu-Jitsu coaching">Learn more →</a></div>
-          </article>
-          <article class="coaching-card reveal">
-            <div class="card-image"><img src="assets/images/service-youth.webp" alt="Saul coaching an inclusive youth Jiu-Jitsu session."></div>
-            <div class="card-body"><div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="3"/><path d="M5 21v-2c0-4 2.5-7 7-7s7 3 7 7v2"/><path d="M7 14l-3 2M17 14l3 2"/></svg></div><h3>Youth Coaching</h3><p>Confidence, discipline and respect in a safe, positive environment, including individual and special-needs coaching.</p><a href="#" data-whatsapp-topic="youth Jiu-Jitsu coaching">Learn more →</a></div>
-          </article>
-          <article class="coaching-card reveal">
-            <div class="card-image"><img src="assets/images/service-performance.webp" alt="Advanced Brazilian Jiu-Jitsu training under controlled lighting."></div>
-            <div class="card-body"><div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V13M9 20V9M14 20V5M19 20V2"/></svg></div><h3>Competition & Performance</h3><p>High-level coaching for athletes: strategy, preparation, technical problem-solving and performance.</p><a href="#" data-whatsapp-topic="competition and performance coaching">Learn more →</a></div>
-          </article>
-          <article class="coaching-card reveal">
-            <div class="card-image"><img src="assets/images/service-mobile.webp" alt="Western Cape mountain landscape representing mobile coaching across Cape Town and the Winelands."></div>
-            <div class="card-body"><div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-6.2 6-11a6 6 0 1 0-12 0c0 4.8 6 11 6 11Z"/><circle cx="12" cy="10" r="2"/></svg></div><h3>Mobile Coaching</h3><p>Saul travels to your home, gym, workplace or suitable private venue across Cape Town and the Winelands.</p><a href="#" data-whatsapp-topic="mobile Jiu-Jitsu coaching at my location">Learn more →</a></div>
-          </article>
-        </div>
-      </div>
-      <div class="shell coaching-footnote">Technical development, self-defence, gi and no-gi are shaped around the individual rather than forced into a fixed syllabus.</div>
-    </section>
-
-    <section id="about" class="about section-dark" aria-labelledby="about-title">
-      <div class="shell about-grid">
-        <div class="about-portrait reveal">
-          <img src="assets/images/saul-portrait.webp" alt="Professor Saul Abelson in a black Brazilian Jiu-Jitsu gi.">
-          <div class="script-line">Better Humans.<br>Stronger Communities.</div>
-        </div>
-
-        <div class="about-copy reveal">
-          <p class="eyebrow eyebrow-warm">Meet Saul</p>
-          <h2 id="about-title">Experience<br>you can trust.</h2>
-          <p>I’m Professor Saul Abelson, and I’ve devoted more than 25 years to the study, practice and teaching of martial arts. My approach is individual, intelligent and rooted in real experience — on the mats and in life.</p>
-          <div class="about-facts">
-            <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></svg><b>25+ years’ experience</b></span>
-            <span><svg viewBox="0 0 24 24"><path d="M4 8h5l3 3 3-3h5l-2 4 2 4h-5l-3-3-3 3H4l2-4-2-4Z"/></svg><b>3rd degree BJJ black belt</b></span>
-            <span><svg viewBox="0 0 24 24"><path d="M12 3 19 6v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3Z"/></svg><b>Judo black belt</b></span>
-            <span><svg viewBox="0 0 24 24"><path d="M6 5l12 14M18 5 6 19"/></svg><b>Japanese Jiu-Jitsu black belt</b></span>
-            <span><svg viewBox="0 0 24 24"><path d="M7 12V8a2 2 0 0 1 4 0v3M11 11V7a2 2 0 0 1 4 0v4M15 11V8a2 2 0 0 1 4 0v6c0 4-2 7-6 7h-2c-3 0-6-2-6-6v-3a2 2 0 0 1 2-2Z"/></svg><b>Boxing & kickboxing background</b></span>
-            <span><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M4 20v-2c0-4 2-6 5-6 2 0 3.6.8 4.4 2.2M16 12l2 2 3-4M16 20v-5"/></svg><b>Coached professional fighters</b></span>
-            <span><svg viewBox="0 0 24 24"><rect x="5" y="7" width="14" height="12" rx="2"/><path d="M9 7V5h6v2M12 10v6M9 13h6"/></svg><b>First-aid trained</b></span>
-            <span><svg viewBox="0 0 24 24"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M3 20c0-4 2-7 5-7s5 3 5 7M11 20c0-4 2-7 5-7s5 3 5 7"/></svg><b>Children incl. special needs</b></span>
-          </div>
-        </div>
-
-        <div class="about-quote reveal">
-          <div class="quote-card">
-            <div class="quote-mark">“</div>
-            <p>Martial arts has given me a way to help people become more capable, more resilient and happier in life.</p>
-            <footer>Prof. Saul Abelson</footer>
-          </div>
-        </div>
-
-        <div class="about-training reveal">
-          <img src="assets/images/saul-training.webp" alt="Saul teaching Brazilian Jiu-Jitsu during a private training session.">
-          <div class="vertical-message">Discipline<br>Kindness<br>Better humans</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="locations" class="locations section-dark" aria-labelledby="locations-title">
-      <div class="shell locations-grid">
-        <div class="locations-landscape reveal">
-          <img src="assets/images/cape-landscape.webp" alt="Western Cape mountains and coastline.">
-          <div class="locations-overlay">
-            <p class="eyebrow eyebrow-warm">Cape Town & the Winelands</p>
-            <h2 id="locations-title">Private coaching at your home, workplace or a suitable venue.</h2>
-            <a class="button button-gold" href="request-session.html">View service area</a>
-          </div>
-        </div>
-        <div class="map-panel reveal"><img src="assets/images/location-map.svg" alt="Service-area map showing Cape Town, Stellenbosch, Somerset West, Franschhoek and Val de Vie."></div>
-        <div class="location-brand-panel reveal">
-          <img src="assets/images/brand-mark-approved.png" alt="" aria-hidden="true">
-          <div><span>Mountains</span><span>Winelands</span><span>Ocean</span><span>People</span><strong>Potential</strong></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="testimonials" class="testimonials section-light" aria-labelledby="testimonials-title">
-      <div class="shell testimonial-grid">
-        <div class="testimonial-heading reveal">
-          <p class="eyebrow">Testimonials</p>
-          <h2 id="testimonials-title">Real people.<br>Real progress.</h2>
-          <span class="red-rule"></span>
-          <p>Serious coaching. Individual attention. Trust earned over time.</p>
-        </div>
-
-        <blockquote class="testimonial-card reveal">
-          <p>“I cannot recommend Saul strongly enough. I have trained with a lot of different people, but Saul is one of those rare coaches who understands that good training is about more than simply teaching technique. From the outset, he was extraordinarily accommodating of my circumstances and consistently went out of his way to make training workable.”</p>
-          <footer>David · Private client</footer>
-          <button class="testimonial-read" type="button" data-testimonial-open="testimonial-david">Read full testimonial →</button>
-        </blockquote>
-
-        <blockquote class="testimonial-card reveal">
-          <p>“I've been training with Saul for approaching a year, but realized that if I wanted to make progress on building a game suited to my age and size, that private lessons would be the way to go.”</p>
-          <footer>Ian Calder · Chief Customer Officer · Global Tech platform provider · Paarl</footer>
-          <button class="testimonial-read" type="button" data-testimonial-open="testimonial-ian">Read full testimonial →</button>
-        </blockquote>
-
-        <blockquote class="testimonial-card reveal">
-          <p>“I’ve had the pleasure of training under Professor Saul Abelson, and I can’t recommend him highly enough. He is not only a brilliant coach, but also a true gentle warrior—someone who brings strength, compassion, and professionalism to every class.”</p>
-          <footer>Margot Mundell · Martial arts academy · Fish Hoek · Blue belt</footer>
-          <button class="testimonial-read" type="button" data-testimonial-open="testimonial-margot">Read full testimonial →</button>
-        </blockquote>
-
-        <blockquote class="testimonial-card reveal">
-          <p>“Saul is a fantastic coach. I had two sessions with him right in the week before my first competition and I couldn’t have asked for better preparation. Saul has a personal, comfortable and comprehensive approach to teaching and the experience was incredibly informative, genuinely beyond anything I have encountered in my training thus far.”</p>
-          <footer>Fergus · 20 · Second-year law student · Stellenbosch</footer>
-          <button class="testimonial-read" type="button" data-testimonial-open="testimonial-fergus">Read full testimonial →</button>
-        </blockquote>
-      </div>
-
-      <dialog class="testimonial-dialog" id="testimonial-david" aria-labelledby="testimonial-david-title">
-        <div class="testimonial-dialog-inner">
-          <button class="testimonial-close" type="button" aria-label="Close testimonial" data-testimonial-close>×</button>
-          <p class="eyebrow">Full testimonial</p>
-          <h3 id="testimonial-david-title">David</h3>
-          <p class="testimonial-role">Private client</p>
-          <div class="testimonial-full-copy">
-            <p>“I cannot recommend Saul strongly enough. I have trained with a lot of different people, but Saul is one of those rare coaches who understands that good training is about more than simply teaching technique.</p>
-            <p>From the outset, he was extraordinarily accommodating of my circumstances and consistently went out of his way to make training workable. At the same time, he was completely discreet. I never felt that I had to explain more than I wanted to, nor that anything discussed or observed would become anyone else's business.</p>
-            <p>He has earned my trust and my respect. Saul's gentle, polite and professional demeanour earns both naturally. He is calm, intelligent, patient and highly attentive to the person he is training rather than simply running through a syllabus.</p>
-            <p>Saul and Chacma-BJJ have provided an unusually positive training environment for me, and I am genuinely grateful for all his time, patience and expertise. For anyone looking for serious Brazilian Jiu-Jitsu instruction from someone with both competence and character, I would recommend Saul without reservation.”</p>
-          </div>
-        </div>
-      </dialog>
-
-      <dialog class="testimonial-dialog" id="testimonial-ian" aria-labelledby="testimonial-ian-title">
-        <div class="testimonial-dialog-inner">
-          <button class="testimonial-close" type="button" aria-label="Close testimonial" data-testimonial-close>×</button>
-          <p class="eyebrow">Full testimonial</p>
-          <h3 id="testimonial-ian-title">Ian Calder</h3>
-          <p class="testimonial-role">Chief Customer Officer · Global Tech platform provider · Paarl</p>
-          <div class="testimonial-full-copy">
-            <p>“I've been training with Saul for approaching a year, but realized that if I wanted to make progress on building a game suited to my age and size, that private lessons would be the way to go.</p>
-            <p>His complete lack of ego rolling makes a world of difference to a beginner looking to stay motivated while building your foundations.”</p>
-          </div>
-        </div>
-      </dialog>
-
-      <dialog class="testimonial-dialog" id="testimonial-margot" aria-labelledby="testimonial-margot-title">
-        <div class="testimonial-dialog-inner">
-          <button class="testimonial-close" type="button" aria-label="Close testimonial" data-testimonial-close>×</button>
-          <p class="eyebrow">Full testimonial</p>
-          <h3 id="testimonial-margot-title">Margot Mundell</h3>
-          <p class="testimonial-role">Medicine woman · Runs a martial arts academy in Muizenberg · Fish Hoek · Blue belt</p>
-          <div class="testimonial-full-copy">
-            <p>“I’ve had the pleasure of training under Professor Saul Abelson, and I can’t recommend him highly enough. He is not only a brilliant coach, but also a true gentle warrior—someone who brings strength, compassion, and professionalism to every class.</p>
-            <p>Saul has an incredible ability to make everyone feel welcome, safe, and respected. I’ve always felt completely comfortable in his classes, and I especially appreciate the way he works with women and children with such patience and care.</p>
-            <p>Every session is challenging in the best possible way, and I always walk out feeling lighter, stronger, and more positive. His great sense of humour makes the training even more enjoyable, while his knowledge and professionalism are second to none.</p>
-            <p>An exceptional coach, a wonderful person, and someone I’m genuinely grateful to have had the opportunity to train with. Highly recommended!”</p>
-          </div>
-        </div>
-      </dialog>
-
-      <dialog class="testimonial-dialog" id="testimonial-fergus" aria-labelledby="testimonial-fergus-title">
-        <div class="testimonial-dialog-inner">
-          <button class="testimonial-close" type="button" aria-label="Close testimonial" data-testimonial-close>×</button>
-          <p class="eyebrow">Full testimonial</p>
-          <h3 id="testimonial-fergus-title">Fergus</h3>
-          <p class="testimonial-role">20 · Second-year law student · Stellenbosch</p>
-          <div class="testimonial-full-copy">
-            <p>“Saul is a fantastic coach. I had two sessions with him right in the week before my first competition and I couldn’t have asked for better preparation.</p>
-            <p>Saul has a personal, comfortable and comprehensive approach to teaching and the experience was incredibly informative, genuinely beyond anything I have encountered in my training thus far.</p>
-            <p>My absolute favourite part of the experience was, after asking me what I wanted to work on, Saul took the time to roll with me and understand my game as it was. This meant the lesson was entirely focused on areas that I needed to work on which was absolutely brilliant.</p>
-            <p>Was super nervous going in to my first competition. Personalised training and an amiable, principle focused coach helped massively. Would highly recommend.”</p>
-          </div>
-        </div>
-      </dialog>
-    </section>
-
-    <section id="contact" class="conversion section-dark" aria-labelledby="contact-title">
-      <div class="conversion-mark" aria-hidden="true"><img src="assets/images/brand-mark-approved.png" alt=""></div>
-      <div class="shell conversion-grid">
-        <div class="conversion-copy reveal"><p class="eyebrow eyebrow-warm">Start the conversation</p><h2 id="contact-title">Let’s build a stronger you.</h2><p>Ask a question on WhatsApp or send Saul a structured session request. Quick, direct and no obligation.</p></div>
-        <div class="conversion-actions reveal"><a class="button button-whatsapp" href="#" data-whatsapp>Chat on WhatsApp</a><a class="button button-request" href="request-session.html">Request a session</a></div>
-        <div class="conversion-values reveal">
-          <div><svg viewBox="0 0 24 24"><rect x="5" y="6" width="14" height="13" rx="1"/><path d="M8 3v5M16 3v5M5 10h14"/></svg><span>Train your way</span></div>
-          <div><svg viewBox="0 0 24 24"><path d="M3 18 9 7l4 7 3-5 5 9H3Z"/></svg><span>Cape Town & Winelands</span></div>
-          <div><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M3 20c0-4 2-7 5-7s5 3 5 7M11 20c0-4 2-7 5-7s5 3 5 7"/></svg><span>Real people. Real progress.</span></div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="shell footer-inner">
-      <a class="brand footer-brand" href="#top" aria-label="CHACMA BJJ home"><img src="assets/images/logo-horizontal-approved.png" alt="CHACMA BJJ" class="footer-logo"></a>
-      <div class="footer-tag">People · Technique · Character</div>
-      <nav class="footer-nav" aria-label="Footer navigation"><a href="#training">Coaching</a><a href="#about">About</a><a href="#locations">Locations</a><a href="#testimonials">Testimonials</a><a href="request-session.html">Request Session</a></nav>
-      <div class="footer-social"><a href="https://www.instagram.com/chacmabjj/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.facebook.com/profile.php?id=61593930403911" target="_blank" rel="noopener noreferrer">Facebook</a></div>
-      <div class="footer-note">© 2026 CHACMA BJJ<br>All rights reserved</div>
-    </div>
-  </footer>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-header="">
+<div class="shell header-inner">
+<a aria-label="CHACMA BJJ home" class="brand" href="#top">
+<img alt="CHACMA BJJ – Private Jiu-Jitsu. Built around you." class="brand-logo" decoding="async" height="260" src="assets/images/logo-horizontal.webp" width="840"/>
+</a>
+<button aria-controls="nav" aria-expanded="false" class="menu-toggle" data-menu-toggle="" type="button">
+<span></span><span></span><span></span><span class="sr-only">Toggle navigation</span>
+</button>
+<nav aria-label="Primary" class="nav" data-nav="" id="nav">
+<a aria-current="page" href="#top">Home</a>
+<a href="#about">About</a>
+<a href="#training">Training</a>
+<a href="#locations">Locations</a>
+<a href="#testimonials">Testimonials</a>
+<a href="request-session.html">Request Session</a>
+</nav>
+<div class="header-actions">
+<a class="button button-small" href="request-session.html">Request a session</a>
+</div>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero section-dark" id="top"><div class="hero-stage"><div class="hero-media"><img alt="Saul guiding two children through a Jiu-Jitsu training interaction." decoding="async" fetchpriority="high" height="941" src="assets/images/hero-coaching.webp" width="1672"/></div><div aria-hidden="true" class="hero-shade"></div><div class="shell hero-inner">
+<div class="hero-copy">
+<p class="eyebrow eyebrow-warm">Private martial arts coaching</p>
+<h1 id="hero-title"><span>Private Jiu-Jitsu.</span><span>Built around you.</span></h1>
+<p class="hero-lede">Private coaching with Saul Abelson, shaped around your experience, body and goals. Personal attention, controlled intensity and practical flexibility — in Cape Town and the Winelands.</p>
+<div class="hero-actions">
+<a class="button" href="request-session.html">Start a conversation</a>
+<a class="button button-ghost" href="#about">Meet Saul</a>
+</div>
+<div aria-label="CHACMA coaching principles" class="hero-values">
+<div><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M12 21c-4-3-7-7-7-11a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4-3 8-7 11Z"></path></svg><span>People<br/>not ego</span></div>
+<div><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M3 18 9 7l4 7 3-5 5 9H3Z"></path></svg><span>Technique<br/>for life</span></div>
+<div><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"></path></svg><span>A stronger<br/>you</span></div>
+</div>
+</div>
+</div></div>
+</section><section aria-label="Explore Saul’s coaching" class="authority-strip"><div class="shell authority-inner"><div><strong>Get to know the coaching.</strong><p>Explore CHACMA’s YouTube channel and training updates.</p></div><nav aria-label="CHACMA social channels" class="authority-links"><a aria-label="CHACMA BJJ on YouTube (opens in a new tab)" href="https://www.youtube.com/channel/UCFfan4FD1CbwkIuFp4QQ4sw" rel="noopener noreferrer" target="_blank">YouTube<span aria-hidden="true"> ↗</span></a><a aria-label="CHACMA BJJ on Instagram (opens in a new tab)" href="https://www.instagram.com/chacmabjj/" rel="noopener noreferrer" target="_blank">Instagram<span aria-hidden="true"> ↗</span></a><a aria-label="CHACMA BJJ on Facebook (opens in a new tab)" href="https://www.facebook.com/profile.php?id=61593930403911" rel="noopener noreferrer" target="_blank">Facebook<span aria-hidden="true"> ↗</span></a></nav></div></section>
+<section aria-labelledby="training-title" class="coaching section-light" id="training">
+<div class="shell coaching-grid">
+<div class="coaching-intro">
+<p class="eyebrow">Focused coaching</p>
+<h2 id="training-title">Private coaching. Your starting point.</h2>
+<span class="red-rule"></span>
+<p>New to martial arts, returning to training or refining an existing BJJ game? Start with what you need. Saul shapes the coaching around you.</p>
+<div class="coach-role">Professor Saul Abelson<br/>Founder &amp; head coach</div>
+</div>
+<div class="coaching-cards">
+<article class="coaching-card">
+<div class="card-image"><img alt="Professor Saul Abelson coaching a private Jiu-Jitsu student." decoding="async" height="840" loading="lazy" src="assets/images/service-one.webp" width="840"/></div>
+<div class="card-body"><div class="card-icon"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><circle cx="12" cy="7" r="4"></circle><path d="M5 21v-2c0-4 2.6-7 7-7s7 3 7 7v2"></path></svg></div><h3>One-to-one coaching</h3><p>Beginner Jiu-Jitsu foundations or focused private lessons around your schedule. Set a pace that suits you, including when returning to training.</p><a aria-label="Discuss one-to-one Jiu-Jitsu coaching with Saul on WhatsApp (opens in a new tab)" data-whatsapp-topic="one-to-one Jiu-Jitsu coaching" href="https://wa.me/27768858313?text=Hi%20Saul%2C%20I%20would%20like%20to%20discuss%20one-to-one%20Jiu-Jitsu%20coaching." rel="noopener noreferrer" target="_blank">Learn more →</a></div>
+</article>
+<article class="coaching-card">
+<div class="card-image"><img alt="Private Jiu-Jitsu coaching adapted to an adult student." decoding="async" height="840" loading="lazy" src="assets/images/service-pairs.webp" width="840"/></div>
+<div class="card-body"><div class="card-icon"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><circle cx="8" cy="8" r="3"></circle><circle cx="16" cy="8" r="3"></circle><path d="M3 20c0-4 2-7 5-7s5 3 5 7M11 20c0-4 2-7 5-7s5 3 5 7"></path></svg></div><h3>Pairs &amp; small groups</h3><p>Train with a partner, friend or family member in a focused, practical and enjoyable format.</p><a aria-label="Discuss private pairs or small-group Jiu-Jitsu coaching with Saul on WhatsApp (opens in a new tab)" data-whatsapp-topic="private pairs or small-group Jiu-Jitsu coaching" href="https://wa.me/27768858313?text=Hi%20Saul%2C%20I%20would%20like%20to%20discuss%20private%20pairs%20or%20small-group%20Jiu-Jitsu%20coaching." rel="noopener noreferrer" target="_blank">Learn more →</a></div>
+</article>
+<article class="coaching-card">
+<div class="card-image"><img alt="Saul coaching an inclusive youth Jiu-Jitsu session." decoding="async" height="840" loading="lazy" src="assets/images/service-youth.webp" width="840"/></div>
+<div class="card-body"><div class="card-icon"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><circle cx="12" cy="7" r="3"></circle><path d="M5 21v-2c0-4 2.5-7 7-7s7 3 7 7v2"></path><path d="M7 14l-3 2M17 14l3 2"></path></svg></div><h3>Private youth coaching</h3><p>Individual attention for your child. Discuss their age, goals and any specific requirements with Saul so he can assess a suitable approach.</p><a aria-label="Discuss youth Jiu-Jitsu coaching with Saul on WhatsApp (opens in a new tab)" data-whatsapp-topic="youth Jiu-Jitsu coaching" href="https://wa.me/27768858313?text=Hi%20Saul%2C%20I%20would%20like%20to%20discuss%20youth%20Jiu-Jitsu%20coaching." rel="noopener noreferrer" target="_blank">Learn more →</a></div>
+</article>
+<article class="coaching-card">
+<div class="card-image"><img alt="Advanced Brazilian Jiu-Jitsu training under controlled lighting." decoding="async" height="718" loading="lazy" src="assets/images/service-performance.webp" width="1080"/></div>
+<div class="card-body"><div class="card-icon"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M4 20V13M9 20V9M14 20V5M19 20V2"></path></svg></div><h3>BJJ technical development</h3><p>Already training? Work on a recurring problem, build your game or prepare for competition with focused technical coaching.</p><a aria-label="Discuss competition and performance coaching with Saul on WhatsApp (opens in a new tab)" data-whatsapp-topic="competition and performance coaching" href="https://wa.me/27768858313?text=Hi%20Saul%2C%20I%20would%20like%20to%20discuss%20competition%20and%20performance%20coaching." rel="noopener noreferrer" target="_blank">Learn more →</a></div>
+</article>
+<article class="coaching-card">
+<div class="card-image"><img alt="Western Cape mountain landscape representing mobile coaching across Cape Town and the Winelands." decoding="async" height="686" loading="lazy" src="assets/images/service-mobile.webp" width="1600"/></div>
+<div class="card-body"><div class="card-icon"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M12 21s6-6.2 6-11a6 6 0 1 0-12 0c0 4.8 6 11 6 11Z"></path><circle cx="12" cy="10" r="2"></circle></svg></div><h3>Coaching at your location</h3><p>Mobile martial arts coaching at your home, gym, workplace or another suitable venue. Location and travel arrangements agreed directly.</p><a aria-label="Discuss mobile Jiu-Jitsu coaching at my location with Saul on WhatsApp (opens in a new tab)" data-whatsapp-topic="mobile Jiu-Jitsu coaching at my location" href="https://wa.me/27768858313?text=Hi%20Saul%2C%20I%20would%20like%20to%20discuss%20mobile%20Jiu-Jitsu%20coaching%20at%20my%20location." rel="noopener noreferrer" target="_blank">Learn more →</a></div>
+</article>
+</div>
+</div>
+<div class="shell coaching-footnote">Gi, no-gi and self-defence can be discussed around your objectives. Specific requirements start with a conversation about practical fit.</div>
+</section>
+<section aria-labelledby="about-title" class="about section-dark" id="about">
+<div class="shell about-grid">
+<div class="about-portrait">
+<img alt="Professor Saul Abelson in a black Brazilian Jiu-Jitsu gi." decoding="async" height="1249" loading="lazy" src="assets/images/saul-portrait.webp" width="1000"/>
+</div>
+<div class="about-copy">
+<p class="eyebrow eyebrow-warm">Meet Saul</p>
+<h2 id="about-title">Experience<br/>you can trust.</h2>
+<p>I’m Saul Joshua Abelson. I’ve devoted more than 25 years to the study, practice and teaching of martial arts. My approach is individual, attentive and rooted in experience — with the technical focus and intensity shaped around the person I’m coaching.</p>
+<div class="about-facts">
+<span><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 7v5l3 2"></path></svg><b>25+ years’ experience</b></span>
+<span><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M4 8h5l3 3 3-3h5l-2 4 2 4h-5l-3-3-3 3H4l2-4-2-4Z"></path></svg><b>BJJ black belt</b></span>
+<span><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M12 3 19 6v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3Z"></path></svg><b>Judo black belt</b></span>
+<span><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M6 5l12 14M18 5 6 19"></path></svg><b>Japanese Jiu-Jitsu black belt</b></span>
+<span><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M7 12V8a2 2 0 0 1 4 0v3M11 11V7a2 2 0 0 1 4 0v4M15 11V8a2 2 0 0 1 4 0v6c0 4-2 7-6 7h-2c-3 0-6-2-6-6v-3a2 2 0 0 1 2-2Z"></path></svg><b>Boxing &amp; kickboxing background</b></span>
+<span><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M4 20v-2c0-4 2-6 5-6 2 0 3.6.8 4.4 2.2M16 12l2 2 3-4M16 20v-5"></path></svg><b>Coached professional fighters</b></span>
+<span><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><rect height="12" rx="2" width="14" x="5" y="7"></rect><path d="M9 7V5h6v2M12 10v6M9 13h6"></path></svg><b>First-aid trained</b></span>
+<span><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><circle cx="8" cy="9" r="3"></circle><circle cx="16" cy="9" r="3"></circle><path d="M3 20c0-4 2-7 5-7s5 3 5 7M11 20c0-4 2-7 5-7s5 3 5 7"></path></svg><b>Youth &amp; special-needs coaching experience</b></span>
+</div>
+</div>
+<div class="about-quote">
+<div class="quote-card">
+<div class="quote-mark">“</div>
+<p>Martial arts has given me a way to help people become more capable, more resilient and happier in life.</p>
+<footer>Prof. Saul Abelson</footer>
+</div>
+</div>
+<div class="about-training">
+<img alt="Saul teaching Brazilian Jiu-Jitsu during a private training session." decoding="async" height="718" loading="lazy" src="assets/images/saul-training.webp" width="1080"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="locations-title" class="locations section-dark" id="locations">
+<div class="shell locations-grid">
+<div class="locations-landscape">
+<img alt="Western Cape mountains and coastline." decoding="async" height="943" loading="lazy" src="assets/images/cape-landscape.webp" width="2200"/>
+<div class="locations-overlay">
+<p class="eyebrow eyebrow-warm">Cape Town &amp; the Winelands</p>
+<h2 id="locations-title">Private coaching at your home, workplace or a suitable venue.</h2>
+<a class="button button-gold" href="request-session.html">Discuss your location</a>
+</div>
+</div>
+<div class="map-panel"><img alt="Service-area map showing Cape Town, Stellenbosch, Somerset West, Franschhoek and Val de Vie." decoding="async" height="360" loading="lazy" src="assets/images/location-map.svg" width="900"/><p class="map-caption">Cape Town · Stellenbosch · Somerset West · Franschhoek · Val de Vie. Sessions by arrangement; confirm your location with Saul.</p></div>
+</div>
+</section>
+<section aria-labelledby="testimonials-title" class="testimonials section-light" id="testimonials">
+<div class="shell testimonial-grid">
+<div class="testimonial-heading">
+<p class="eyebrow">Testimonials</p>
+<h2 id="testimonials-title">Real people.<br/>Real progress.</h2>
+<span class="red-rule"></span>
+<p>Serious coaching. Individual attention. Trust earned over time.</p>
+</div>
+<blockquote class="testimonial-card">
+<p>“I cannot recommend Saul strongly enough. I have trained with a lot of different people, but Saul is one of those rare coaches who understands that good training is about more than simply teaching technique. From the outset, he was extraordinarily accommodating of my circumstances and consistently went out of his way to make training workable.”</p>
+<footer>David · Private client</footer>
+<button class="testimonial-read" data-testimonial-open="testimonial-david" type="button">Read full testimonial →</button>
+</blockquote>
+<blockquote class="testimonial-card">
+<p>“I've been training with Saul for approaching a year, but realized that if I wanted to make progress on building a game suited to my age and size, that private lessons would be the way to go.”</p>
+<footer>Ian Calder · Chief Customer Officer · Global Tech platform provider · Paarl</footer>
+<button class="testimonial-read" data-testimonial-open="testimonial-ian" type="button">Read full testimonial →</button>
+</blockquote>
+<blockquote class="testimonial-card">
+<p>“Saul has an incredible ability to make everyone feel welcome, safe, and respected. I’ve always felt completely comfortable in his classes, and I especially appreciate the way he works with women and children with such patience and care.”</p>
+<footer>Margot Mundell · Martial arts academy · Fish Hoek · Blue belt</footer>
+<button class="testimonial-read" data-testimonial-open="testimonial-margot" type="button">Read full testimonial →</button>
+</blockquote>
+<blockquote class="testimonial-card">
+<p>“Saul is a fantastic coach. I had two sessions with him right in the week before my first competition and I couldn’t have asked for better preparation. Saul has a personal, comfortable and comprehensive approach to teaching and the experience was incredibly informative, genuinely beyond anything I have encountered in my training thus far.”</p>
+<footer>Fergus · 20 · Second-year law student · Stellenbosch</footer>
+<button class="testimonial-read" data-testimonial-open="testimonial-fergus" type="button">Read full testimonial →</button>
+</blockquote>
+</div>
+<dialog aria-labelledby="testimonial-david-title" class="testimonial-dialog" id="testimonial-david">
+<div class="testimonial-dialog-inner">
+<button aria-label="Close testimonial" class="testimonial-close" data-testimonial-close="" type="button">×</button>
+<p class="eyebrow">Full testimonial</p>
+<h3 id="testimonial-david-title">David</h3>
+<p class="testimonial-role">Private client</p>
+<div class="testimonial-full-copy">
+<p>“I cannot recommend Saul strongly enough. I have trained with a lot of different people, but Saul is one of those rare coaches who understands that good training is about more than simply teaching technique.</p>
+<p>From the outset, he was extraordinarily accommodating of my circumstances and consistently went out of his way to make training workable. At the same time, he was completely discreet. I never felt that I had to explain more than I wanted to, nor that anything discussed or observed would become anyone else's business.</p>
+<p>He has earned my trust and my respect. Saul's gentle, polite and professional demeanour earns both naturally. He is calm, intelligent, patient and highly attentive to the person he is training rather than simply running through a syllabus.</p>
+<p>Saul and Chacma-BJJ have provided an unusually positive training environment for me, and I am genuinely grateful for all his time, patience and expertise. For anyone looking for serious Brazilian Jiu-Jitsu instruction from someone with both competence and character, I would recommend Saul without reservation.”</p>
+</div>
+</div>
+</dialog>
+<dialog aria-labelledby="testimonial-ian-title" class="testimonial-dialog" id="testimonial-ian">
+<div class="testimonial-dialog-inner">
+<button aria-label="Close testimonial" class="testimonial-close" data-testimonial-close="" type="button">×</button>
+<p class="eyebrow">Full testimonial</p>
+<h3 id="testimonial-ian-title">Ian Calder</h3>
+<p class="testimonial-role">Chief Customer Officer · Global Tech platform provider · Paarl</p>
+<div class="testimonial-full-copy">
+<p>“I've been training with Saul for approaching a year, but realized that if I wanted to make progress on building a game suited to my age and size, that private lessons would be the way to go.</p>
+<p>His complete lack of ego rolling makes a world of difference to a beginner looking to stay motivated while building your foundations.”</p>
+</div>
+</div>
+</dialog>
+<dialog aria-labelledby="testimonial-margot-title" class="testimonial-dialog" id="testimonial-margot">
+<div class="testimonial-dialog-inner">
+<button aria-label="Close testimonial" class="testimonial-close" data-testimonial-close="" type="button">×</button>
+<p class="eyebrow">Full testimonial</p>
+<h3 id="testimonial-margot-title">Margot Mundell</h3>
+<p class="testimonial-role">Medicine woman · Runs a martial arts academy in Muizenberg · Fish Hoek · Blue belt</p>
+<div class="testimonial-full-copy">
+<p>“I’ve had the pleasure of training under Professor Saul Abelson, and I can’t recommend him highly enough. He is not only a brilliant coach, but also a true gentle warrior—someone who brings strength, compassion, and professionalism to every class.</p>
+<p>Saul has an incredible ability to make everyone feel welcome, safe, and respected. I’ve always felt completely comfortable in his classes, and I especially appreciate the way he works with women and children with such patience and care.</p>
+<p>Every session is challenging in the best possible way, and I always walk out feeling lighter, stronger, and more positive. His great sense of humour makes the training even more enjoyable, while his knowledge and professionalism are second to none.</p>
+<p>An exceptional coach, a wonderful person, and someone I’m genuinely grateful to have had the opportunity to train with. Highly recommended!”</p>
+</div>
+</div>
+</dialog>
+<dialog aria-labelledby="testimonial-fergus-title" class="testimonial-dialog" id="testimonial-fergus">
+<div class="testimonial-dialog-inner">
+<button aria-label="Close testimonial" class="testimonial-close" data-testimonial-close="" type="button">×</button>
+<p class="eyebrow">Full testimonial</p>
+<h3 id="testimonial-fergus-title">Fergus</h3>
+<p class="testimonial-role">20 · Second-year law student · Stellenbosch</p>
+<div class="testimonial-full-copy">
+<p>“Saul is a fantastic coach. I had two sessions with him right in the week before my first competition and I couldn’t have asked for better preparation.</p>
+<p>Saul has a personal, comfortable and comprehensive approach to teaching and the experience was incredibly informative, genuinely beyond anything I have encountered in my training thus far.</p>
+<p>My absolute favourite part of the experience was, after asking me what I wanted to work on, Saul took the time to roll with me and understand my game as it was. This meant the lesson was entirely focused on areas that I needed to work on which was absolutely brilliant.</p>
+<p>Was super nervous going in to my first competition. Personalised training and an amiable, principle focused coach helped massively. Would highly recommend.”</p>
+</div>
+</div>
+</dialog>
+</section>
+<section aria-labelledby="contact-title" class="conversion section-dark" id="contact">
+<div aria-hidden="true" class="conversion-mark"><img alt="" decoding="async" height="600" loading="lazy" src="assets/images/brand-mark.webp" width="600"/></div>
+<div class="shell conversion-grid">
+<div class="conversion-copy"><p class="eyebrow eyebrow-warm">Start the conversation</p><h2 id="contact-title">Let’s build a stronger you.</h2><p>Ask a question on WhatsApp or send Saul a structured session request. Quick, direct and no obligation.</p></div>
+<div class="conversion-actions"><a class="button button-request" href="request-session.html">Request a session</a><a aria-label="Chat on WhatsApp (opens in a new tab)" class="button button-whatsapp" data-whatsapp="" href="https://wa.me/27768858313?text=Hi%20Saul%2C%20I%20would%20like%20to%20discuss%20private%20Jiu-Jitsu%20coaching." rel="noopener noreferrer" target="_blank">Chat on WhatsApp</a></div>
+<div class="conversion-values">
+<div><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><rect height="13" rx="1" width="14" x="5" y="6"></rect><path d="M8 3v5M16 3v5M5 10h14"></path></svg><span>Train your way</span></div>
+<div><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M3 18 9 7l4 7 3-5 5 9H3Z"></path></svg><span>Cape Town &amp; Winelands</span></div>
+<div><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><circle cx="8" cy="8" r="3"></circle><circle cx="16" cy="8" r="3"></circle><path d="M3 20c0-4 2-7 5-7s5 3 5 7M11 20c0-4 2-7 5-7s5 3 5 7"></path></svg><span>Real people. Real progress.</span></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="shell footer-inner">
+<a aria-label="CHACMA BJJ home" class="brand footer-brand" href="#top"><img alt="CHACMA BJJ" class="footer-logo" decoding="async" height="260" loading="lazy" src="assets/images/logo-horizontal.webp" width="840"/></a>
+<div class="footer-tag">People · Technique · Character</div>
+<nav aria-label="Footer navigation" class="footer-nav"><a href="#training">Coaching</a><a href="#about">About</a><a href="#locations">Locations</a><a href="#testimonials">Testimonials</a><a href="request-session.html">Request Session</a></nav>
+<div class="footer-social"><a aria-label="CHACMA BJJ on YouTube (opens in a new tab)" href="https://www.youtube.com/channel/UCFfan4FD1CbwkIuFp4QQ4sw" rel="noopener noreferrer" target="_blank">YouTube<span aria-hidden="true"> ↗</span></a><a aria-label="CHACMA BJJ on Instagram (opens in a new tab)" href="https://www.instagram.com/chacmabjj/" rel="noopener noreferrer" target="_blank">Instagram<span aria-hidden="true"> ↗</span></a><a aria-label="CHACMA BJJ on Facebook (opens in a new tab)" href="https://www.facebook.com/profile.php?id=61593930403911" rel="noopener noreferrer" target="_blank">Facebook<span aria-hidden="true"> ↗</span></a></div>
+<div class="footer-note">© 2026 CHACMA BJJ<br/>All rights reserved</div>
+<div class="footer-contact"><a href="mailto:chacmabjj@gmail.com">chacmabjj@gmail.com</a><a href="tel:+27768858313">+27 76 885 8313</a></div></div>
+</footer>
 </body>
 </html>

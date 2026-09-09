@@ -1,75 +1,93 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R0LVV5Y407"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-R0LVV5Y407');
-  </script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07100f">
-  <meta name="description" content="Request a private Jiu-Jitsu training session with Professor Saul Abelson at Chacma BJJ across Cape Town and the Winelands.">
-  <meta property="og:title" content="Request a session | CHACMA BJJ">
-  <meta property="og:description" content="Tell Saul when, where and how you would like to train. Private Jiu-Jitsu built around you.">
-  <meta property="og:type" content="website">
-  <title>Request a session | CHACMA BJJ</title>
-  <link rel="icon" href="assets/icons/favicon.png" type="image/png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="session.css">
-  <script defer src="script.js"></script>
-  <script defer src="session.js"></script>
-</head>
+<!DOCTYPE html>
+
+<html lang="en-ZA">
+<head><meta charset="utf-8"/>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-R0LVV5Y407"></script>
+<script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+// Retain campaign attribution without passing arbitrary query fields to GA4.
+const analyticsUrl = new URL(location.origin + location.pathname);
+const incomingParams = new URLSearchParams(location.search);
+for (const key of ['utm_source','utm_medium','utm_campaign','utm_id','utm_term','utm_content','gclid','dclid','gbraid','wbraid']) {
+  const value = incomingParams.get(key);
+  if (value && value.length <= 200) analyticsUrl.searchParams.set(key, value);
+}
+gtag('js', new Date());
+gtag('config', 'G-R0LVV5Y407', {page_location: analyticsUrl.href});</script>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#07100f" name="theme-color"/>
+<meta content="Request private Jiu-Jitsu coaching with Saul Abelson. Share your goals, area and preferred time. Saul confirms availability and arrangements directly." name="description"/>
+<meta content="Request a private coaching session | CHACMA BJJ" property="og:title"/>
+<meta content="Request private Jiu-Jitsu coaching with Saul Abelson. Share your goals, area and preferred time. Saul confirms availability and arrangements directly." property="og:description"/>
+<meta content="website" property="og:type"/>
+<title>Request a private coaching session | CHACMA BJJ</title>
+<link href="assets/icons/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="site.webmanifest" rel="manifest"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="session.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script>
+<script defer="" src="session.js"></script>
+<link href="https://www.chacmabjj.co.za/request-session.html" rel="canonical"/>
+<link href="assets/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<meta content="https://www.chacmabjj.co.za/request-session.html" property="og:url"/><meta content="CHACMA BJJ" property="og:site_name"/><meta content="en_ZA" property="og:locale"/>
+<meta content="https://www.chacmabjj.co.za/assets/images/hero-coaching.webp" property="og:image"/><meta content="1672" property="og:image:width"/><meta content="941" property="og:image:height"/><meta content="Private Jiu-Jitsu coaching with individual attention" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/><meta content="Request a private coaching session | CHACMA BJJ" name="twitter:title"/><meta content="Request private Jiu-Jitsu coaching with Saul Abelson. Share your goals, area and preferred time. Saul confirms availability and arrangements directly." name="twitter:description"/><meta content="https://www.chacmabjj.co.za/assets/images/hero-coaching.webp" name="twitter:image"/>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "@id": "https://www.chacmabjj.co.za/request-session.html#page",
+  "url": "https://www.chacmabjj.co.za/request-session.html",
+  "name": "Request a session with CHACMA BJJ",
+  "inLanguage": "en-ZA",
+  "isPartOf": {
+    "@id": "https://www.chacmabjj.co.za/#website"
+  },
+  "about": {
+    "@id": "https://www.chacmabjj.co.za/#coaching"
+  }
+}</script><link as="font" crossorigin="" href="assets/fonts/inter-400.woff2" rel="preload" type="font/woff2"/></head>
 <body class="session-page">
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header" data-header>
-    <div class="shell header-inner">
-      <a class="brand" href="index.html#top" aria-label="CHACMA BJJ home"><img src="assets/images/logo-horizontal-approved.png" alt="CHACMA BJJ" class="brand-logo"></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" data-menu-toggle><span></span><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
-      <nav id="nav" class="nav session-nav" aria-label="Primary" data-nav>
-        <a href="index.html#top">Home</a><a href="index.html#about">About</a><a href="index.html#training">Training</a><a href="index.html#locations">Locations</a><a href="index.html#testimonials">Testimonials</a><a class="is-active" href="request-session.html" aria-current="page">Request Session</a>
-      </nav>
-      <div class="header-actions"><a class="button button-small" href="#request-form">Request a session</a><div class="header-kicker">Cape Town<br>Winelands<br>and beyond</div></div>
-    </div>
-  </header>
-  <main id="main">
-    <section class="session-hero section-dark" aria-labelledby="session-hero-title">
-      <div class="session-hero-media" aria-hidden="true"><img src="assets/images/saul-training.webp" alt=""></div>
-      <div class="session-hero-shade" aria-hidden="true"></div>
-      <div class="shell session-hero-grid">
-        <div class="session-hero-copy"><p class="eyebrow eyebrow-warm">Private training · session request</p><h1 id="session-hero-title">Train on your terms.</h1><p class="session-hero-lede">Tell Saul what you need, roughly where you are and when you would like to train. He will confirm availability and the practical details directly with you.</p><div class="session-hero-actions"><a class="button" href="#request-form">Request a session</a><a class="button button-ghost" href="#how-it-works">How it works</a></div></div>
-        <aside class="session-principle" aria-label="How private training works"><p class="eyebrow eyebrow-warm">Built around you</p><h2>Simple to request.<br>Personal to deliver.</h2><div class="principle-list"><span>Choose a preferred day and time</span><span>Tell Saul your area and training focus</span><span>Saul confirms the session directly</span></div><p class="session-principle-note">No fixed timetable. No one-size-fits-all syllabus.</p></aside>
-      </div>
-    </section>
-    <section class="session-rail" aria-label="Session request summary"><div class="shell session-rail-grid"><div><strong>One-to-one</strong><span>Focused private coaching</span></div><div><strong>Small groups</strong><span>Friends, family or colleagues</span></div><div><strong>Adults + youth</strong><span>Beginner to experienced</span></div><div><strong>Gi + no-gi</strong><span>Choose or let Saul advise</span></div><div><strong>Mobile coaching</strong><span>Cape Town, Winelands and beyond</span></div></div></section>
-    <section class="request-section section-light" id="request-form" aria-labelledby="request-title">
-      <div class="shell request-grid">
-        <div class="request-intro"><p class="eyebrow">Request your session</p><h2 id="request-title">Give Saul enough to make the next step easy.</h2><p>You do not need to know exactly what programme you need. The useful information is simply who you are, when you would like to train, roughly where you are and what you want from the session.</p><div class="request-notes"><div><strong>This is a request, not a confirmed booking.</strong><span>Saul will confirm the date, time, location and practical arrangements directly with you.</span></div><div><strong>Keep private information private.</strong><span>You do not need to provide medical, personal or sensitive background here. Discuss anything relevant directly with Saul if and when necessary.</span></div></div></div>
-        <form class="session-form" id="session-request-form" novalidate>
-          <div class="form-section-head"><span>01</span><div><strong>Your details</strong><small>How Saul can reach you</small></div></div>
-          <div class="form-grid form-grid-2"><label class="form-field"><span>Name <em>*</em></span><input type="text" name="name" autocomplete="name" required placeholder="Your name"></label><label class="form-field"><span>Email <em>*</em></span><input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label><label class="form-field"><span>Mobile / WhatsApp</span><input type="tel" name="phone" autocomplete="tel" placeholder="+27 ..."></label><label class="form-field"><span>Preferred contact</span><select name="contact_method"><option>Email</option><option>WhatsApp</option><option>Phone call</option><option>No preference</option></select></label></div>
-          <div class="form-section-head"><span>02</span><div><strong>The training</strong><small>Enough context to shape the session</small></div></div>
-          <div class="form-grid form-grid-2"><label class="form-field"><span>Session format <em>*</em></span><select name="session_format" required><option value="">Choose one</option><option>One-to-one coaching</option><option>Two-person / private pair</option><option>Small-group session</option><option>Youth / child coaching</option><option>Not sure yet</option></select></label><label class="form-field"><span>Experience level</span><select name="experience"><option>Never trained</option><option>Beginner</option><option>Some experience</option><option>Experienced</option><option>Competition / performance</option></select></label><label class="form-field"><span>Training focus</span><select name="focus"><option>General Jiu-Jitsu / technical development</option><option>Beginner foundations</option><option>Self-defence</option><option>Competition / performance</option><option>Youth development</option><option>Not sure — discuss with Saul</option></select></label><label class="form-field"><span>Gi / no-gi</span><select name="gi_preference"><option>No preference</option><option>Gi</option><option>No-gi</option><option>Both</option><option>Not sure</option></select></label></div>
-          <div class="form-section-head"><span>03</span><div><strong>When and where</strong><small>Your preferred practical arrangement</small></div></div>
-          <div class="form-grid form-grid-2"><label class="form-field"><span>Preferred date <em>*</em></span><input type="date" name="preferred_date" required data-preferred-date></label><label class="form-field"><span>Preferred time <em>*</em></span><input type="time" name="preferred_time" required></label><label class="form-field"><span>Alternative date</span><input type="date" name="alternative_date" data-alternative-date></label><label class="form-field"><span>Alternative time</span><input type="time" name="alternative_time"></label><label class="form-field form-field-wide"><span>Area / suburb <em>*</em></span><input type="text" name="location" required placeholder="e.g. Constantia, Paarl, Stellenbosch"></label><label class="form-field form-field-wide"><span>Venue preference</span><select name="venue_preference"><option>Flexible — discuss with Saul</option><option>My home</option><option>My gym / training venue</option><option>Workplace / private venue</option><option>Please suggest a suitable venue</option></select></label></div>
-          <div class="form-section-head"><span>04</span><div><strong>Anything useful to add?</strong><small>Optional</small></div></div>
-          <label class="form-field"><span>Goals, questions or practical notes</span><textarea name="notes" rows="5" placeholder="What would you like to work on, or is there anything practical Saul should know before contacting you?"></textarea></label>
-          <label class="form-check"><input type="checkbox" name="acknowledgement" required><span>I understand that this submits a session request and that the booking is only confirmed once Saul agrees the date, time and arrangements with me.</span></label>
-          <div class="form-error" data-form-error role="alert" hidden></div><div class="form-actions"><button class="button form-submit" type="submit">Create email request</button><button class="button button-ghost-dark" type="button" data-session-whatsapp>Send via WhatsApp instead</button></div><p class="transport-note">“Create email request” opens your email application with the completed request addressed to Saul. Nothing is sent until you press Send in your email application.</p>
-        </form>
-      </div>
-    </section>
-    <section class="how-section section-dark" id="how-it-works" aria-labelledby="how-title"><div class="shell"><div class="how-head"><p class="eyebrow eyebrow-warm">What happens next</p><h2 id="how-title">Request. Confirm. Train.</h2></div><div class="how-grid"><article class="how-card"><span>01</span><h3>Send the request</h3><p>Give Saul your preferred time, location and enough context to understand what you are looking for.</p></article><article class="how-card"><span>02</span><h3>Saul confirms the details</h3><p>He will respond directly, confirm availability and resolve any timing, venue or training questions with you.</p></article><article class="how-card"><span>03</span><h3>Train around your objective</h3><p>The session starts from your level, body, goals and circumstances rather than forcing you into a generic class format.</p></article></div></div></section>
-    <section class="session-faq section-light" aria-labelledby="faq-title"><div class="shell faq-grid"><div class="faq-heading"><p class="eyebrow">Before you request</p><h2 id="faq-title">A few useful answers.</h2></div><div class="faq-list"><details><summary>Do I need any Jiu-Jitsu experience?</summary><p>No. Private coaching works particularly well for complete beginners because Saul can set the pace and explain the fundamentals without the pressure of keeping up with a class.</p></details><details><summary>Can I request a session for my child?</summary><p>Yes. Choose “Youth / child coaching” in the form. Saul can then discuss age, goals and the practical setup directly with the parent or guardian.</p></details><details><summary>What if I am flexible on date or time?</summary><p>Use the alternative date and time fields or mention your wider availability in the notes. More flexibility usually makes arranging a session easier.</p></details><details><summary>Where can sessions take place?</summary><p>Depending on what is practical, sessions can take place at your home, gym, workplace or another suitable venue across Cape Town, the Winelands and surrounding areas.</p></details></div></div></section>
-    <section class="session-contact section-dark"><div class="shell session-contact-grid"><div><p class="eyebrow eyebrow-warm">Prefer a conversation first?</p><h2>Speak to Saul directly.</h2><p>If you are not sure what to request, start with a short WhatsApp conversation instead.</p></div><a class="button button-whatsapp" href="#" data-whatsapp>Chat on WhatsApp</a></div></section>
-  </main>
-  <footer class="footer"><div class="shell footer-inner"><a class="brand footer-brand" href="index.html#top" aria-label="CHACMA BJJ home"><img src="assets/images/logo-horizontal-approved.png" alt="CHACMA BJJ" class="footer-logo"></a><div class="footer-meta">Private Jiu-Jitsu & martial arts coaching · Cape Town & the Winelands<br><em>Private Jiu-Jitsu. Built around you.</em></div><div class="footer-social"><a href="https://www.instagram.com/chacmabjj/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.facebook.com/profile.php?id=61593930403911" target="_blank" rel="noopener noreferrer">Facebook</a></div><div class="footer-note">© 2026 CHACMA BJJ<br>All rights reserved</div></div></footer>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-header="">
+<div class="shell header-inner">
+<a aria-label="CHACMA BJJ home" class="brand" href="index.html#top"><img alt="CHACMA BJJ" class="brand-logo" decoding="async" height="260" src="assets/images/logo-horizontal.webp" width="840"/></a>
+<button aria-controls="nav" aria-expanded="false" class="menu-toggle" data-menu-toggle="" type="button"><span></span><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+<nav aria-label="Primary" class="nav session-nav" data-nav="" id="nav">
+<a href="index.html#top">Home</a><a href="index.html#about">About</a><a href="index.html#training">Training</a><a href="index.html#locations">Locations</a><a href="index.html#testimonials">Testimonials</a><a aria-current="page" class="is-active" href="request-session.html">Request Session</a>
+</nav>
+<div class="header-actions"><a class="button button-small" href="#request-form">Request a session</a></div>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="session-hero-title" class="session-hero section-dark">
+<div class="shell session-hero-grid">
+<div class="session-hero-copy"><p class="eyebrow eyebrow-warm">Private training · session request</p><h1 id="session-hero-title">Train on your terms.</h1><p class="session-hero-lede">Tell Saul what you need, roughly where you are and when you would like to train. He will confirm availability and the practical details directly with you.</p><div class="session-hero-actions"><a class="button" href="#request-form">Request a session</a><a class="button button-ghost" href="#how-it-works">How it works</a></div></div>
+<div class="session-hero-photo"><img alt="Jiu-Jitsu technique demonstrated during a coaching session." decoding="async" height="718" src="assets/images/saul-training.webp" width="1080"/></div></div>
+</section>
+<section aria-label="Session request summary" class="session-rail"><div class="shell session-rail-grid"><div><strong>One-to-one</strong><span>Focused private coaching</span></div><div><strong>Small groups</strong><span>Friends, family or colleagues</span></div><div><strong>Adults + youth</strong><span>Beginner to experienced</span></div><div><strong>Gi + no-gi</strong><span>Choose or let Saul advise</span></div><div><strong>Mobile coaching</strong><span>Cape Town and the Winelands</span></div></div></section>
+<section aria-labelledby="request-title" class="request-section section-light" id="request-form">
+<div class="shell request-grid">
+<div class="request-intro"><p class="eyebrow">Request your session</p><h2 id="request-title">Give Saul enough to make the next step easy.</h2><p>You do not need to know exactly what programme you need. The useful information is simply who you are, when you would like to train, roughly where you are and what you want from the session.</p><div class="request-notes"><div><strong>This is a request, not a confirmed booking.</strong><span>Saul will confirm the date, time, location and practical arrangements directly with you.</span></div><div><strong>Keep private information private.</strong><span>You do not need to provide medical, personal or sensitive background here. Discuss anything relevant directly with Saul if and when necessary.</span></div></div></div>
+<noscript><p>To request a session, <a href="mailto:chacmabjj@gmail.com">email Saul</a> or <a href="https://wa.me/27768858313" rel="noopener noreferrer" target="_blank">contact him on WhatsApp</a>. Share your name, area and preferred timing.</p></noscript><form aria-describedby="transport-note" aria-label="Session request" class="session-form" hidden="" id="session-request-form" novalidate="">
+<div class="form-section-head"><span>01</span><div><strong>Your details</strong><small>How Saul can reach you</small></div></div>
+<div class="form-grid form-grid-2"><label class="form-field"><span>Name <em>*</em></span><input autocomplete="name" maxlength="120" name="name" placeholder="Your name" required="" type="text"/></label><label class="form-field"><span>Email <em>*</em></span><input autocomplete="email" maxlength="120" name="email" placeholder="you@example.com" required="" type="email"/></label><label class="form-field"><span>Mobile / WhatsApp</span><input autocomplete="tel" maxlength="30" name="phone" placeholder="+27 ..." type="tel"/></label><label class="form-field"><span>Preferred contact</span><select name="contact_method"><option>Email</option><option>WhatsApp</option><option>Phone call</option><option>No preference</option></select></label></div>
+<div class="form-section-head"><span>02</span><div><strong>The training</strong><small>Enough context to shape the session</small></div></div>
+<div class="form-grid form-grid-2"><label class="form-field"><span>Session format <em>*</em></span><select name="session_format" required=""><option value="">Choose one</option><option>One-to-one coaching</option><option>Two-person / private pair</option><option>Small-group session</option><option>Youth / child coaching</option><option>Not sure yet</option></select></label><label class="form-field"><span>Experience level</span><select name="experience"><option>Never trained</option><option>Beginner</option><option>Some experience</option><option>Experienced</option><option>Competition / performance</option></select></label><label class="form-field"><span>Training focus</span><select name="focus"><option>Jiu-Jitsu development</option><option>Beginner foundations</option><option>Self-defence</option><option>Competition / performance</option><option>Youth development</option><option>Not sure yet</option><option>Returning to training</option><option>Specific requirements</option></select></label><label class="form-field"><span>Gi / no-gi</span><select name="gi_preference"><option>No preference</option><option>Gi</option><option>No-gi</option><option>Both</option><option>Not sure</option></select></label></div>
+<div class="form-section-head"><span>03</span><div><strong>When and where</strong><small>Your preferred practical arrangement</small></div></div>
+<div class="form-grid form-grid-2"><label class="form-field"><span>Preferred date <em>*</em></span><input data-preferred-date="" name="preferred_date" required="" type="date"/></label><label class="form-field"><span>Preferred time <em>*</em></span><input name="preferred_time" required="" type="time"/></label><label class="form-field"><span>Alternative date</span><input data-alternative-date="" name="alternative_date" type="date"/></label><label class="form-field"><span>Alternative time</span><input name="alternative_time" type="time"/></label><label class="form-field form-field-wide"><span>Area / suburb <em>*</em></span><input maxlength="120" name="location" placeholder="e.g. Constantia, Paarl, Stellenbosch" required="" type="text"/></label><label class="form-field form-field-wide"><span>Venue preference</span><select name="venue_preference"><option>Flexible — please advise</option><option>My home</option><option>My gym / training venue</option><option>Workplace / private venue</option><option>Please suggest a venue</option></select></label></div>
+<div class="form-section-head"><span>04</span><div><strong>Anything useful to add?</strong><small>Optional</small></div></div>
+<label class="form-field"><span>Goals, questions or practical notes</span><textarea maxlength="1000" name="notes" placeholder="What would you like to work on, or is there anything practical Saul should know before contacting you?" rows="5"></textarea></label>
+<label class="form-check"><input name="acknowledgement" required="" type="checkbox"/><span>I understand this prepares a request for me to send. My booking is confirmed only when Saul agrees the date, time and arrangements with me.</span></label>
+<div class="form-error" data-form-error="" hidden="" role="alert"></div><div class="form-actions"><button class="button form-submit" type="submit">Create email request</button><button class="button button-ghost-dark" data-session-whatsapp="" type="button">Create WhatsApp request</button></div><p class="request-status" data-request-status="" role="status"></p><details class="request-fallback" data-request-fallback="" hidden=""><summary>App did not open? Copy your request</summary><p>Email it to <a href="mailto:chacmabjj@gmail.com">chacmabjj@gmail.com</a> or message Saul on <a href="https://wa.me/27768858313" rel="noopener noreferrer" target="_blank">WhatsApp</a>.</p><label class="form-field"><span>Prepared request</span><textarea data-request-copy="" readonly="" rows="10"></textarea></label></details><p class="transport-note" id="transport-note">These buttons open your email app or WhatsApp with a prepared message. Review it and press Send there. Nothing is sent automatically. All session times refer to South African time.</p>
+</form>
+</div>
+</section>
+<section aria-labelledby="how-title" class="how-section section-dark" id="how-it-works"><div class="shell"><div class="how-head"><p class="eyebrow eyebrow-warm">What happens next</p><h2 id="how-title">Request. Confirm. Train.</h2></div><div class="how-grid"><article class="how-card"><span>01</span><h3>Send the request</h3><p>Give Saul your preferred time, location and enough context to understand what you are looking for.</p></article><article class="how-card"><span>02</span><h3>Saul confirms the details</h3><p>He will respond directly, confirm availability and resolve any timing, venue or training questions with you.</p></article><article class="how-card"><span>03</span><h3>Train around your objective</h3><p>The session starts from your level, body, goals and circumstances rather than forcing you into a generic class format.</p></article></div></div></section>
+<section aria-labelledby="faq-title" class="session-faq section-light"><div class="shell faq-grid"><div class="faq-heading"><p class="eyebrow">Before you request</p><h2 id="faq-title">A few useful answers.</h2></div><div class="faq-list"><details><summary>Do I need any Jiu-Jitsu experience?</summary><p>No. Private coaching works particularly well for complete beginners because Saul can set the pace and explain the fundamentals without the pressure of keeping up with a class.</p></details><details><summary>Can I request a session for my child?</summary><p>Yes. Choose “Youth / child coaching” in the form. Saul can then discuss age, goals and the practical setup directly with the parent or guardian.</p></details><details><summary>What if I am flexible on date or time?</summary><p>Use the alternative date and time fields or mention your wider availability in the notes. More flexibility usually makes arranging a session easier.</p></details><details><summary>Where can sessions take place?</summary><p>Depending on what is practical, sessions can take place at your home, gym, workplace or another suitable venue across Cape Town, the Winelands.</p></details></div></div></section>
+<section class="session-contact section-dark"><div class="shell session-contact-grid"><div><p class="eyebrow eyebrow-warm">Prefer a conversation first?</p><h2>Speak to Saul directly.</h2><p>If you are not sure what to request, start with a short WhatsApp conversation instead.</p></div><a aria-label="Chat on WhatsApp (opens in a new tab)" class="button button-whatsapp" data-whatsapp="" href="https://wa.me/27768858313?text=Hi%20Saul%2C%20I%20would%20like%20to%20discuss%20private%20Jiu-Jitsu%20coaching." rel="noopener noreferrer" target="_blank">Chat on WhatsApp</a></div></section>
+</main>
+<footer class="footer"><div class="shell footer-inner"><a aria-label="CHACMA BJJ home" class="brand footer-brand" href="index.html#top"><img alt="CHACMA BJJ" class="footer-logo" decoding="async" height="260" loading="lazy" src="assets/images/logo-horizontal.webp" width="840"/></a><div class="footer-meta">Private Jiu-Jitsu &amp; martial arts coaching · Cape Town &amp; the Winelands<br/><em>Private Jiu-Jitsu. Built around you.</em></div><div class="footer-social"><a aria-label="CHACMA BJJ on YouTube (opens in a new tab)" href="https://www.youtube.com/channel/UCFfan4FD1CbwkIuFp4QQ4sw" rel="noopener noreferrer" target="_blank">YouTube<span aria-hidden="true"> ↗</span></a><a aria-label="CHACMA BJJ on Instagram (opens in a new tab)" href="https://www.instagram.com/chacmabjj/" rel="noopener noreferrer" target="_blank">Instagram<span aria-hidden="true"> ↗</span></a><a aria-label="CHACMA BJJ on Facebook (opens in a new tab)" href="https://www.facebook.com/profile.php?id=61593930403911" rel="noopener noreferrer" target="_blank">Facebook<span aria-hidden="true"> ↗</span></a></div><div class="footer-note">© 2026 CHACMA BJJ<br/>All rights reserved</div><div class="footer-contact"><a href="mailto:chacmabjj@gmail.com">chacmabjj@gmail.com</a><a href="tel:+27768858313">+27 76 885 8313</a></div></div></footer>
 </body>
 </html>
