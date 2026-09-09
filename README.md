@@ -1,32 +1,37 @@
-# CHACMA BJJ website
+# CHACMA BJJ
 
-Deployment-ready static website for the root of `chacmabjj/bjj`.
+**Private Jiu-Jitsu. Built around you.**
 
-## Version
+The official website for CHACMA BJJ: private Jiu-Jitsu and martial arts coaching with Saul Joshua Abelson across Cape Town and the Winelands.
 
-**v1.5 — mock-up alignment pass**
+Coaching centres on individual attention, technical development, controlled intensity and practical flexibility. Sessions include one-to-one coaching, private pairs and small groups, youth coaching and focused work for existing BJJ practitioners. Mobile coaching takes place at suitable venues by arrangement.
 
-## Key v1.5 changes
+**Website:** [www.chacmabjj.co.za](https://www.chacmabjj.co.za/)
 
-- Hero rebuilt as a full-bleed image with layered left-to-right, top-to-bottom and crimson atmospheric gradients instead of a visible rectangular image block.
-- Header reduced and overlaid on the hero, with a smaller dark horizontal CHACMA BJJ logo.
-- Typography scale tightened across the page and kept in the Manrope/Inter sans-serif system.
-- Credential strip rebuilt with compact line icons and proportions closer to the approved mock-up.
-- Why Private section reduced to a shallower 38/62 split with four compact benefit columns.
-- Training section returned to the mock-up pattern: small `TRAINING OPTIONS` label, small right-hand positioning line and six compact cards on wide screens.
-- Meet Saul section rebuilt as a three-panel editorial band: portrait, credentials and an image-backed quote panel.
-- Baboon/Cape brand panel moved out of the hero and into the lower locations band.
-- Locations rebuilt as landscape / stylised map / brand-rail structure.
-- Testimonials rebuilt as a heading column plus two real testimonial cards, including Ian Calder's testimonial.
-- WhatsApp CTA compressed into a horizontal band with supporting value points.
-- Footer reduced to the compact proportions of the approved visual model.
-- Large PNG assets converted to WebP to reduce page weight substantially.
+## Website structure
 
-## Tracking and contact
+| File | Purpose |
+| --- | --- |
+| `index.html` | Coaching, Saul’s background, service areas, testimonials and contact routes |
+| `request-session.html` | Session enquiry form and practical information |
+| `styles.css` / `session.css` | Shared styling and session-page layout |
+| `script.js` / `session.js` | Navigation, testimonials, enquiry tracking and request preparation |
+| `assets/` | Images, icons and locally hosted Inter fonts |
+| `sitemap.xml` / `robots.txt` | Search-engine discovery |
+| `CNAME` / `.nojekyll` | GitHub Pages configuration |
 
-- Google tag: `G-R0LVV5Y407`
-- WhatsApp: `+27 76 885 8313`
+## Hosting and enquiries
 
-## Deployment
+The site uses static HTML, CSS and JavaScript, hosted on GitHub Pages. It requires no framework, package installation or build step.
 
-Upload the contents of this folder to the root of the `main` branch. GitHub Pages should serve the site from the repository root.
+Session requests open a prepared message in the visitor’s email application or WhatsApp. Saul confirms availability, location and arrangements directly. The website does not confirm bookings or process payments.
+
+## Contact
+
+- [Email Saul](mailto:chacmabjj@gmail.com)
+- [WhatsApp](https://wa.me/27768858313)
+- [YouTube](https://www.youtube.com/channel/UCFfan4FD1CbwkIuFp4QQ4sw)
+- [Instagram](https://www.instagram.com/chacmabjj/)
+- [Facebook](https://www.facebook.com/profile.php?id=61593930403911)
+
+Inter is distributed under the [SIL Open Font License](assets/fonts/OFL.txt).

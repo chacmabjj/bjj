@@ -1,9 +1,22 @@
 {
   "name": "CHACMA Private Jiu-Jitsu",
   "short_name": "CHACMA",
+  "lang": "en-ZA",
   "start_url": "./",
-  "display": "standalone",
+  "scope": "./",
+  "display": "browser",
   "background_color": "#07100f",
   "theme_color": "#07100f",
-  "icons": [{"src":"assets/icons/favicon.png","sizes":"any","type":"image/png"}]
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
