@@ -1,37 +1,27 @@
-# CHACMA BJJ
+# CHACMA BJJ website
 
-**Private Jiu-Jitsu. Built around you.**
+Production website for CHACMA BJJ — private Jiu-Jitsu and martial-arts coaching with Saul Abelson in Cape Town and the Winelands.
 
-The official website for CHACMA BJJ: private Jiu-Jitsu and martial arts coaching with Saul Joshua Abelson across Cape Town and the Winelands.
+## Production
 
-Coaching centres on individual attention, technical development, controlled intensity and practical flexibility. Sessions include one-to-one coaching, private pairs and small groups, youth coaching and focused work for existing BJJ practitioners. Mobile coaching takes place at suitable venues by arrangement.
+- Canonical domain: `https://www.chacmabjj.co.za/`
+- GitHub Pages fallback: `https://chacmabjj.github.io/bjj/`
+- Main enquiry route: `/request-session.html`
 
-**Website:** [www.chacmabjj.co.za](https://www.chacmabjj.co.za/)
+The site is static HTML, CSS and JavaScript. It uses no build step or front-end framework. Deployment is from the repository root through GitHub Pages.
 
-## Website structure
+## Structure
 
-| File | Purpose |
-| --- | --- |
-| `index.html` | Coaching, Saul’s background, service areas, testimonials and contact routes |
-| `request-session.html` | Session enquiry form and practical information |
-| `styles.css` / `session.css` | Shared styling and session-page layout |
-| `script.js` / `session.js` | Navigation, testimonials, enquiry tracking and request preparation |
-| `assets/` | Images, icons and locally hosted Inter fonts |
-| `sitemap.xml` / `robots.txt` | Search-engine discovery |
-| `CNAME` / `.nojekyll` | GitHub Pages configuration |
+- `index.html` — homepage
+- `request-session.html` — request-to-confirm session flow
+- `styles.css` — shared site and responsive styles
+- `session.css` — request-page styles
+- `script.js` — navigation, testimonial dialogs and conversion event hooks
+- `session.js` — local request-message preparation
+- `assets/images/` — production imagery and brand assets
+- `assets/icons/` — favicon and manifest icons
+- `CNAME`, `robots.txt`, `sitemap.xml`, `site.webmanifest` — deployment and discovery configuration
 
-## Hosting and enquiries
+## Deployment check
 
-The site uses static HTML, CSS and JavaScript, hosted on GitHub Pages. It requires no framework, package installation or build step.
-
-Session requests open a prepared message in the visitor’s email application or WhatsApp. Saul confirms availability, location and arrangements directly. The website does not confirm bookings or process payments.
-
-## Contact
-
-- [Email Saul](mailto:chacmabjj@gmail.com)
-- [WhatsApp](https://wa.me/27768858313)
-- [YouTube](https://www.youtube.com/channel/UCFfan4FD1CbwkIuFp4QQ4sw)
-- [Instagram](https://www.instagram.com/chacmabjj/)
-- [Facebook](https://www.facebook.com/profile.php?id=61593930403911)
-
-Inter is distributed under the [SIL Open Font License](assets/fonts/OFL.txt).
+After replacing repository contents, confirm the custom domain remains configured in GitHub Pages, then verify `/`, `/request-session.html`, WhatsApp links and the responsive mobile navigation.

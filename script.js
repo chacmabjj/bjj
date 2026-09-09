@@ -20,49 +20,30 @@
   document.addEventListener('click', event => { if (!event.target.closest('.site-header')) closeMenu(); });
   document.addEventListener('focusin', event => { if (!event.target.closest('.site-header')) closeMenu(); });
   matchMedia('(max-width:1180px)').addEventListener('change', () => closeMenu());
-
-  // Never pass hrefs, form content, names, contact details or free text to analytics.
   window.chacmaTrack = (eventName, channel, placement) => {
     if (typeof window.gtag === 'function') {
-      window.gtag('event', eventName, {
-        contact_channel: channel,
-        placement,
-        page_location: location.origin + location.pathname,
-        transport_type: 'beacon'
-      });
+      window.gtag('event', eventName, {contact_channel:channel,placement,page_location:location.origin+location.pathname,transport_type:'beacon'});
     }
   };
   document.addEventListener('click', event => {
-    const link = event.target.closest('a');
-    if (!link) return;
+    const link = event.target.closest('a'); if (!link) return;
     const url = new URL(link.href, location.href);
     const placement = link.closest('header') ? 'header' : link.closest('.footer') ? 'footer' : link.closest('.authority-strip') ? 'authority_strip' : 'content';
     let name, channel;
-    if (url.hostname === 'wa.me') { name = 'whatsapp_enquiry'; channel = 'whatsapp'; }
-    else if (url.protocol === 'mailto:') { name = 'email_enquiry'; channel = 'email'; }
-    else if (url.protocol === 'tel:') { name = 'phone_enquiry'; channel = 'phone'; }
-    else if (url.hostname === 'www.youtube.com') { name = 'youtube_click'; channel = 'youtube'; }
-    else if (url.hostname === 'www.instagram.com') { name = 'instagram_click'; channel = 'instagram'; }
-    else if (url.hostname === 'www.facebook.com') { name = 'facebook_click'; channel = 'facebook'; }
-    else if (url.origin === location.origin && (url.pathname.endsWith('/request-session.html') || url.hash === '#request-form')) { name = 'request_session_click'; channel = 'request_form'; }
+    if (url.hostname === 'wa.me') { name='whatsapp_enquiry'; channel='whatsapp'; }
+    else if (url.protocol === 'mailto:') { name='email_enquiry'; channel='email'; }
+    else if (url.protocol === 'tel:') { name='phone_enquiry'; channel='phone'; }
+    else if (url.hostname === 'www.youtube.com') { name='youtube_click'; channel='youtube'; }
+    else if (url.hostname === 'www.instagram.com') { name='instagram_click'; channel='instagram'; }
+    else if (url.hostname === 'www.facebook.com') { name='facebook_click'; channel='facebook'; }
+    else if (url.origin === location.origin && (url.pathname.endsWith('/request-session.html') || url.hash === '#request-form')) { name='request_session_click'; channel='request_form'; }
     if (name) window.chacmaTrack(name, channel, placement);
   });
-
   document.querySelectorAll('[data-testimonial-open]').forEach(opener => {
-    const dialog = document.getElementById(opener.dataset.testimonialOpen);
-    if (!dialog) return;
-    opener.addEventListener('click', () => {
-      dialog.showModal();
-      document.body.classList.add('testimonial-modal-open');
-    });
+    const dialog = document.getElementById(opener.dataset.testimonialOpen); if (!dialog) return;
+    opener.addEventListener('click', () => { dialog.showModal(); document.body.classList.add('testimonial-modal-open'); });
     dialog.querySelector('[data-testimonial-close]')?.addEventListener('click', () => dialog.close());
-    dialog.addEventListener('click', event => {
-      const box = dialog.getBoundingClientRect();
-      if (event.target === dialog && (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom)) dialog.close();
-    });
-    dialog.addEventListener('close', () => {
-      document.body.classList.remove('testimonial-modal-open');
-      opener.focus();
-    });
+    dialog.addEventListener('click', event => { const box=dialog.getBoundingClientRect(); if(event.target===dialog && (event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom)) dialog.close(); });
+    dialog.addEventListener('close', () => { document.body.classList.remove('testimonial-modal-open'); opener.focus(); });
   });
 })();
